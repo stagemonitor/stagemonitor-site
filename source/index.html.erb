@@ -1,14 +1,6 @@
 ---
-title: Welcome to Middleman
+title: stagemonitor
 ---
-
-
-
-
-
-
-
-
 
 <!-- Homepage Hero
 ================================================== -->
@@ -19,21 +11,18 @@ title: Welcome to Middleman
 		<div class="twelve columns">
 
 			<div class="hero-text">
-				<h1 class="responsive-headline">The perfect template to showcase your awesome product and service.</h1>
+				<img src="images/stagemonitor-logo-light-big.png"/>
 
-				<p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-					enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.
-					Quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+				<p>an open source solution to application performance monitoring for java server applications</p>
 			</div>
-
 			<div class="buttons">
-				<a class="button trial" href="#">Free Trial</a>
-				<a class="button learn-more smoothscroll" href="#features">Learn More</a>
+				<a class="button trial" href="#">View on GitHub <i class="fa fa-github-alt"></i></a>
+				<a class="button learn-more smoothscroll" href="https://github.com/stagemonitor/stagemonitor/wiki/Installation">Get started</a>
 			</div>
 
-			<div class="hero-image">
-				<img src="images/hero-image.png" alt=""/>
-			</div>
+			<!--<div class="hero-image">-->
+				<!--<img src="images/hero-image.png" alt=""/>-->
+			<!--</div>-->
 
 		</div>
 
@@ -46,55 +35,69 @@ title: Welcome to Middleman
 ================================================== -->
 <section id='features'>
 
-	<div class="row feature design">
+	<div class="row feature">
 
 		<div class="six columns right">
-			<h3>Simple, Clean and Modern Design.</h3>
+			<h3>Analyze Requests and Call Stacks</h3>
 
-			<p>Lorem ipsum dolor sit amet, ea eum labitur scripserit, illum complectitur deterruisset at pro. Odio
-				quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie
-				percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci
-				iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
-				Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
+			<p>
+				Filter requests by queries or by selecting charts. Get details about the request including the call
+				stack (aka call tree) rendered with state-of-the-art ascii-art
 			</p>
 		</div>
-
-		<div class="six columns feature-media left">
-			<img src="images/feature-image-1.png" alt=""/>
-		</div>
-
-	</div>
-
-	<div class="row feature responsive">
 
 		<div class="six columns left">
-			<h3>Fully Responsive.</h3>
-
-			<p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-				enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.
-				Quis nostrum exercitationem ullam corporis suscipit laboriosam.Our library is continually refreshed with
-				the latest on web technology
-				so you'll never fall behind. Quis nostrum exercitationem ullam corporis suscipit laboriosam.
-			</p>
-		</div>
-
-		<div class="six columns feature-media right">
-			<img src="images/feature-image-2.png" alt=""/>
+			<div class="columns item">
+				<div class="item-wrap">
+					<a href="https://cloud.githubusercontent.com/assets/2163464/3207952/c2e08e16-ee11-11e3-87fe-4eb2f761931c.png" data-imagelightbox="a">
+						<img src="https://cloud.githubusercontent.com/assets/2163464/3207952/c2e08e16-ee11-11e3-87fe-4eb2f761931c.png" alt="Analyze Requests and Call Stacks">
+						<div class="overlay"></div>
+						<div class="link-icon"><i class="icon-plus"></i></div>
+					</a>
+				</div>
+			</div>
 		</div>
 
 	</div>
 
-	<div class="row feature cross-browser">
+	<div class="row feature">
+
+		<div class="six columns left">
+			<h3>Request Dashboard</h3>
+
+			<ul>
+				<li>Statistical distribution of response times</li>
+				<li>Throughput</li>
+				<li>Requests are grouped by use cases. Usecases are automatically detected if you use Spring MVC. For other technologies, you can group URLs by regular expressions</li>
+				<li>Errors</li>
+			</ul>
+
+		</div>
 
 		<div class="six columns right">
-			<h3>Cross-Browser Compatible.</h3>
+			<div class="six columns feature-media left">
+				<div class="columns item">
+					<div class="item-wrap">
+						<a href="https://cloud.githubusercontent.com/assets/2163464/3200110/1cf14602-ed77-11e3-8f6b-67251b8b53a2.PNG" data-imagelightbox="a">
+							<img src="https://cloud.githubusercontent.com/assets/2163464/3200110/1cf14602-ed77-11e3-8f6b-67251b8b53a2.PNG" alt="Request Dashboard">
+							<div class="overlay"></div>
+							<div class="link-icon"><i class="icon-plus"></i></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
 
-			<p>Lorem ipsum dolor sit amet, ea eum labitur scripserit, illum complectitur deterruisset at pro. Odio
-				quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie
-				percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci
-				iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt.
-				Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
-			</p>
+	</div>
+
+	<div class="row feature">
+
+		<div class="six columns right">
+			<h3>JVM Dashboards</h3>
+			<ul>
+				<li>Utilisation of all memory pools</li>
+				<li>CPU utilisation of the JVM process</li>
+			</ul>
 		</div>
 
 		<div class="six columns feature-media left">
@@ -103,162 +106,8 @@ title: Welcome to Middleman
 
 	</div>
 
-	<div class="row feature video">
-
-		<div class="six columns left">
-			<h3>Video Support.</h3>
-
-			<p>Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi
-				enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu.
-				Quis nostrum exercitationem ullam corporis suscipit laboriosam. No soleat fabulas prodesset vel, ut quo
-				solum dicunt. Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
-			</p>
-		</div>
-
-		<div class="six columns feature-media right">
-		</div>
-
-	</div>
-
 </section> <!-- Homepage Hero end -->
 
-
-<!-- Pricing Section
-================================================== -->
-<section id="pricing">
-
-	<div class="row section-head">
-
-		<h1>Pricing Tables.</h1>
-
-		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-			aperiam,
-			eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-			ipsam
-			voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
-			ratione
-			voluptatem sequi nesciunt.
-		</p>
-
-	</div>
-
-	<div class="row">
-
-		<div class="pricing-tables bgrid-quarters s-bgrid-halves">
-
-			<div class="column">
-
-				<div class="price-block">
-
-					<h3 class="plan-title"><i class="fa fa-cog"></i>Starter</h3>
-
-					<p class="plan-price">FREE <span>per month</span></p>
-
-					<ul class="features">
-						<li>1GB Storage</li>
-						<li>5GB Bandwidth</li>
-						<li>2 Domains</li>
-						<li>3 Databases</li>
-						<li>1 FTP Account</li>
-						<li>25 Email Accounts</li>
-					</ul>
-
-					<footer class="plan-sign-up">
-						<a class="button" href="">Sign Up</a>
-					</footer>
-
-				</div>
-				<!-- End Price Block -->
-
-			</div>
-			<!-- End Column -->
-
-			<div class="column">
-
-				<div class="price-block">
-
-					<h3 class="plan-title"><i class="fa fa-thumbs-up"></i>Standard</h3>
-
-					<p class="plan-price">$9.99 <span>per month</span></p>
-
-					<ul class="features">
-						<li>3GB Storage</li>
-						<li>10GB Bandwidth</li>
-						<li>3 Domains</li>
-						<li>5 Databases</li>
-						<li>3 FTP Account</li>
-						<li>30 Email Accounts</li>
-					</ul>
-
-					<footer class="plan-sign-up">
-						<a class="button" href="">Sign Up</a>
-					</footer>
-
-				</div>
-				<!-- End Price Block -->
-
-			</div>
-			<!-- End Column -->
-
-			<div class="column">
-
-				<div class="price-block">
-
-					<h3 class="plan-title"><i class="fa fa-star"></i>Premium</h3>
-
-					<p class="plan-price">$19.99 <span>per month</span></p>
-
-					<ul class="features">
-						<li>10GB Storage</li>
-						<li>25GB Bandwidth</li>
-						<li>5 Domains</li>
-						<li>10 Databases</li>
-						<li>10 FTP Account</li>
-						<li>50 Email Accounts</li>
-					</ul>
-
-					<footer class="plan-sign-up">
-						<a class="button" href="">Sign Up</a>
-					</footer>
-
-				</div>
-				<!-- End Price block -->
-
-			</div>
-			<!-- End Column -->
-
-			<div class="column">
-
-				<div class="price-block">
-
-					<h3 class="plan-title"><i class="fa fa-trophy"></i>Ultimate</h3>
-
-					<p class="plan-price">$29.99 <span>per month</span></p>
-
-					<ul class="features">
-						<li>30 Storage</li>
-						<li>Unlimited Bandwidth</li>
-						<li>10 Domains</li>
-						<li>15 Databases</li>
-						<li>10 FTP Account</li>
-						<li>50 Email Accounts</li>
-					</ul>
-
-					<footer class="plan-sign-up">
-						<a class="button" href="">Sign Up</a>
-					</footer>
-
-				</div>
-				<!-- End Price Block -->
-
-			</div>
-			<!-- End Column -->
-
-		</div>
-
-	</div>
-
-</section> <!-- Pricing End -->
 
 <!-- Call-To-Action Section
 ================================================== -->
@@ -467,60 +316,3 @@ title: Welcome to Middleman
 	<!-- row ends -->
 
 </section> <!-- Testimonials Section End-->
-
-
-<!-- Subscribe
-================================================== -->
-<section id="subscribe">
-
-	<div class="row section-head">
-
-		<div class="twelve columns">
-
-			<h1>MailChimp signup form.</h1>
-
-			<p>Adding your own MailChimp powered email sign-up is easy.
-				Grab the super slim code from your MailChimp account and drop the code here. Lastly, remove the link and
-				style tags
-				that comes with the embedded code and your good to go. All styling is within our stylesheet.</p>
-
-		</div>
-
-	</div>
-
-	<div class="row">
-
-		<div class="twelve columns">
-
-			<!-- Begin MailChimp Signup Form -->
-
-			<div id="mc_embed_signup">
-				<form action="http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-
-					<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-					<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-					<div style="position: absolute; left: -5000px;">
-						<input type="text" name="b_cdb7b577e41181934ed6a6a44_e65110b38d" value=""></div>
-					<div class="clear">
-						<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
-					</div>
-
-				</form>
-			</div>
-
-			<p>
-				<small>We never share your information or use it to spam you.</small>
-			</p>
-
-		</div>
-
-	</div>
-
-</section>  <!-- Subscribe Section End-->
-
-
-
-
-
-
-
