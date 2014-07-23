@@ -7,23 +7,6 @@
 (function ($) {
 
 	/*---------------------------------------------------- */
-	/* Preloader
-	 ------------------------------------------------------ */
-	$(window).load(function () {
-
-		// will first fade out the loading animation
-		$("#status").fadeOut("slow");
-
-		// will fade out the whole DIV that covers the website.
-		$("#preloader").delay(500).fadeOut("slow").remove();
-
-		$('.js #hero .hero-image img').addClass("animated fadeInUpBig");
-		$('.js #hero .buttons a.trial').addClass("animated shake");
-
-	});
-
-
-	/*---------------------------------------------------- */
 	/* Mobile Menu
 	 ------------------------------------------------------ */
 	var toggle_button = $("<a>", {
@@ -90,56 +73,6 @@
 	 ------------------------------------------------------*/
 	var sections = $("section"),
 		navigation_links = $("#nav-wrap").find("a");
-
-	sections.waypoint({
-
-		handler: function (event, direction) {
-
-			var active_section;
-
-			active_section = $(this);
-			if (direction === "up") active_section = active_section.prev();
-
-			var active_link = $('#nav-wrap').find('a[href="#' + active_section.attr("id") + '"]');
-
-			navigation_links.parent().removeClass("current");
-			active_link.parent().addClass("current");
-
-		},
-		offset: '35%'
-	});
-
-
-	/*----------------------------------------------------*/
-	/* FitVids
-	 /*----------------------------------------------------*/
-	$(".fluid-video-wrapper").fitVids();
-
-
-	/*----------------------------------------------------*/
-	/* Waypoints Animations
-	 ------------------------------------------------------ */
-	$('.js .design').waypoint(function () {
-		$('.js .design .feature-media').addClass('animated pulse');
-	}, { offset: 'bottom-in-view' });
-
-	$('.js .responsive').waypoint(function () {
-		$('.js .responsive .feature-media').addClass('animated pulse');
-	}, { offset: 'bottom-in-view' });
-
-	$('.js .cross-browser').waypoint(function () {
-		$('.js .cross-browser .feature-media').addClass('animated pulse');
-	}, { offset: 'bottom-in-view' });
-
-	$('.js .video').waypoint(function () {
-		$('.js .video .feature-media').addClass('animated pulse');
-	}, { offset: 'bottom-in-view' });
-
-	$('.js #subscribe').waypoint(function () {
-		$('.js #subscribe input[type="email"]').addClass('animated fadeInLeftBig show');
-		$('.js #subscribe input[type="submit"]').addClass('animated fadeInRightBig show');
-	}, { offset: 'bottom-in-view' });
-
 
 	/*----------------------------------------------------*/
 	/* Flexslider
