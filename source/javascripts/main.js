@@ -58,28 +58,6 @@
 
 
 	/*----------------------------------------------------*/
-	/* Highlight the current section in the navigation bar
-	 ------------------------------------------------------*/
-	var sections = $("section"),
-		navigation_links = $("#nav-wrap").find("a");
-
-	/*----------------------------------------------------*/
-	/* Flexslider
-	 /*----------------------------------------------------*/
-	$('.flexslider').flexslider({
-		namespace: "flex-",
-		controlsContainer: ".flex-container",
-		animation: 'slide',
-		controlNav: true,
-		directionNav: false,
-		smoothHeight: true,
-		slideshowSpeed: 7000,
-		animationSpeed: 600,
-		randomize: false
-	});
-
-
-	/*----------------------------------------------------*/
 	/* ImageLightbox
 	 /*----------------------------------------------------*/
 

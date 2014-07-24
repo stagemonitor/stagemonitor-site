@@ -19,147 +19,57 @@ title: stagemonitor
 				<p>an open source solution to application performance monitoring for java server applications</p>
 			</div>
 			<div class="buttons">
-				<a class="button trial" href="#">View on GitHub <i class="fa fa-github-alt"></i></a>
-				<a class="button learn-more smoothscroll" href="https://github.com/stagemonitor/stagemonitor/wiki/Installation">Get started</a>
+				<a class="btn btn-success btn-lg" href="https://github.com/stagemonitor/stagemonitor">View on GitHub <i class="fa fa-github-alt"></i></a>
+				<a class="btn btn-primary btn-lg" href="https://github.com/stagemonitor/stagemonitor/wiki/Installation">Get Started</a>
 			</div>
 
-			<!--<div class="hero-image">-->
-				<!--<img src="images/hero-image.png" alt=""/>-->
-			<!--</div>-->
 		</div>
 
+		<p class="scrolldown">
+			<a class="btn btn-circle page-scroll smoothscroll" href="#analyze-requests">
+				<i class="fa fa-angle-double-down"></i>
+			</a>
+		</p>
 	</div>
 </section> <!-- Homepage Hero end -->
 
 <!-- Kibana
 ================================================== -->
 <section id="analyze-requests" class="feature-overview">
-	<div class="row">
-		<div class="two columns header-col">
-			<h1><i class="fa fa-tachometer big-fa"></i></h1>
-		</div>
-		<div class="seven columns">
-			<h2>Analyze Requests</h2>
-			<p>
-				Stagemonitor includes a <span>Kibana</span> dashboard that can be used to get detailed information about incoming
-				requests. You don't need to set up logstash or parse any logs for that.
-			</p>
-		</div>
-		<div class="three columns action">
-			<a href="https://github.com/stagemonitor/stagemonitor/wiki/Request-and-Call-Stack-Dashboard" class="button">More Information</a>
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-2">
+				<i class="fa fa-tachometer big-fa"></i>
+				<!--<span class="glyphicon glyphicon-dashboard"></span>-->
+			</div>
+			<div class="col-lg-7">
+				<h2>Analyze Requests</h2>
+				<p>
+					Stagemonitor includes a <span>Kibana</span> dashboard that can be used to get detailed information about incoming
+					requests. You don't need to set up logstash or parse any logs for that.
+				</p>
+			</div>
 		</div>
 	</div>
 </section>
 <section class="features content">
+	<div class="container">
 
-	<div class="row feature">
-		<div class="eight columns right">
-			<h3>Powerful query and filtering capabilities</h3>
-			<p>
-				Filter requests by queries or by selecting charts. You could use the query section to get details about
-				requests that caused errors or where slow.
-			</p>
-		</div>
-
-		<div class="eight columns left">
-			<div class="columns item">
-				<div class="item-wrap">
-					<a href="images/stagemonitor-kibana-filter.png" data-imagelightbox="a">
-						<img src="images/stagemonitor-kibana-filter.png" alt="Filter Requests">
-						<div class="overlay"></div>
-						<div class="link-icon"><i class="icon-plus"></i></div>
-					</a>
-				</div>
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h3 class="featurette-heading">Powerful query and filtering capabilities</h3>
+				<p>
+					Filter requests by queries or by selecting charts. You could use the query section to get details about
+					requests that caused errors or where slow.
+				</p>
 			</div>
-		</div>
-	</div>
 
-	<div class="row feature">
-		<div class="six columns left">
-			<h3>Detailed Request Traces</h3>
-			<p>
-				In this section, you can find out about the root cause of slow or failed requests by analyzing their
-				method call trees (including sql statements and parameters), stack traces, request headers as well as
-				information about the user's login name, ip, browser and operating system
-			</p>
-		</div>
-
-		<div class="six columns left">
-			<div class="columns item">
-				<div class="item-wrap">
-					<a href="images/stagemonitor-kibana-details.png" data-imagelightbox="a">
-						<img src="images/stagemonitor-kibana-details.png" alt="Analyze Requests">
-						<div class="overlay"></div>
-						<div class="link-icon"><i class="icon-plus"></i></div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-</section>
-
-<!-- Grafana
-================================================== -->
-<section class="feature-overview">
-	<div class="row">
-		<div class="two columns header-col">
-			<h1><i class="fa fa-bar-chart-o big-fa"></i></h1>
-		</div>
-		<div class="seven columns">
-			<h2>Grafana Dashboards</h2>
-			<p>
-				Looking for an awesome and reliable webhosting? Try
-				<a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-				Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.
-			</p>
-		</div>
-		<div class="three columns action">
-		</div>
-	</div>
-</section>
-
-<section class="features content">
-
-	<div class="row feature">
-		<div class="six columns right">
-			<h3>Analyze Requests and Call Stacks</h3>
-			<p>
-				Filter requests by queries or by selecting charts. Get details about the request including the call
-				stack (aka call tree) rendered with state-of-the-art ascii-art
-			</p>
-		</div>
-
-		<div class="six columns left">
-			<div class="columns item">
-				<div class="item-wrap">
-					<a href="images/dashboard-request.png" data-imagelightbox="a">
-						<img src="images/dashboard-request.png" alt="Analyze Requests and Call Stacks">
-						<div class="overlay"></div>
-						<div class="link-icon"><i class="icon-plus"></i></div>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="row feature">
-		<div class="six columns left">
-			<h3>Request Dashboard</h3>
-			<ul>
-				<li>Statistical distribution of response times</li>
-				<li>Throughput</li>
-				<li>Requests are grouped by use cases. Usecases are automatically detected if you use Spring MVC. For other technologies, you can group URLs by regular expressions</li>
-				<li>Errors</li>
-			</ul>
-		</div>
-
-		<div class="six columns right">
-			<div class="six columns feature-media left">
+			<div class="col-md-5">
 				<div class="columns item">
 					<div class="item-wrap">
-						<a href="images/dashboard-memory.png" data-imagelightbox="a">
-							<img src="images/dashboard-memory.png" alt="Request Dashboard">
+						<a href="images/stagemonitor-kibana-filter.png" class="img-responsive" data-imagelightbox="a">
+							<img src="images/stagemonitor-kibana-filter.png" alt="Filter Requests">
 							<div class="overlay"></div>
 							<div class="link-icon"><i class="icon-plus"></i></div>
 						</a>
@@ -167,6 +77,110 @@ title: stagemonitor
 				</div>
 			</div>
 		</div>
+
+		<hr class="featurette-divider">
+
+		<div class="row featurette">
+			<div class="col-md-5">
+				<div class="columns item">
+					<div class="item-wrap">
+						<a href="images/stagemonitor-kibana-details.png" data-imagelightbox="a">
+							<img src="images/stagemonitor-kibana-details.png" alt="Analyze Requests">
+							<div class="overlay"></div>
+							<div class="link-icon"><i class="icon-plus"></i></div>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-7">
+				<h3 class="featurette-heading">Detailed Request Traces</h3>
+				<p>
+					In this section, you can find out about the root cause of slow or failed requests by analyzing their
+					method call trees (including sql statements and parameters), stack traces, request headers as well as
+					information about the user's login name, ip, browser and operating system
+				</p>
+			</div>
+		</div>
+
+	</div>
+
+</section>
+
+<!-- Grafana
+================================================== -->
+<section id="analyze-requests" class="feature-overview">
+	<div class="container">
+
+		<div class="row">
+			<div class="col-lg-2">
+				<i class="fa fa-tachometer big-fa"></i>
+			</div>
+			<div class="col-lg-7">
+				<h2>Grafana Dashboards</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+					Aspernatur aut beatae dolor dolores eaque illum itaque magni necessitatibus, optio placeat quo repudiandae rerum ullam velit veritatis vero voluptatum. Numquam, rem.
+				</p>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="features content">
+	<div class="container">
+
+		<div class="row featurette">
+			<div class="col-md-7">
+				<h3 class="featurette-heading">Analyze Requests and Call Stacks</h3>
+				<p>
+					Filter requests by queries or by selecting charts. Get details about the request including the call
+					stack (aka call tree) rendered with state-of-the-art ascii-art
+				</p>
+			</div>
+
+			<div class="col-md-5">
+				<div class="columns item">
+					<div class="item-wrap">
+						<a href="images/dashboard-request.png" data-imagelightbox="a">
+							<img src="images/dashboard-request.png" alt="Analyze Requests and Call Stacks">
+							<div class="overlay"></div>
+							<div class="link-icon"><i class="icon-plus"></i></div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<hr class="featurette-divider">
+
+
+		<div class="row featurette">
+			<div class="col-md-5">
+				<div class="six columns featurette-media left">
+					<div class="columns item">
+						<div class="item-wrap">
+							<a href="images/dashboard-memory.png" data-imagelightbox="a">
+								<img src="images/dashboard-memory.png" alt="Request Dashboard">
+								<div class="overlay"></div>
+								<div class="link-icon"><i class="icon-plus"></i></div>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-7">
+				<h3 class="featurette-heading">Request Dashboard</h3>
+				<ul>
+					<li>Statistical distribution of response times</li>
+					<li>Throughput</li>
+					<li>Requests are grouped by use cases. Usecases are automatically detected if you use Spring MVC. For other technologies, you can group URLs by regular expressions</li>
+					<li>Errors</li>
+				</ul>
+			</div>
+		</div>
+
 	</div>
 
 </section>
