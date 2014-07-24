@@ -159,7 +159,7 @@ header .header-social li a:hover {
 
 /* nav-wrap */
 #nav-wrap {
-	font: 11px sans-serif;
+	font: 12px 'Raleway', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
 	float: left;
@@ -195,7 +195,7 @@ ul#nav li a {
 	line-height: 38px;
 	text-decoration: none;
 	text-align: left;
-	color: #58687A;
+	color: #87a3bc;
 
 	-webkit-transition: color .2s ease-in-out;
 	-moz-transition: color .2s ease-in-out;
