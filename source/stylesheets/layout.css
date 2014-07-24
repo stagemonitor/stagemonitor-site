@@ -282,29 +282,28 @@ ul#nav li.current a {
 /* d. Features Section
 /* ------------------------------------------------------------------ */
 
-#features {
-	background: #fff;
+.features {
 	padding-top: 96px;
 	padding-bottom: 78px;
 	overflow: hidden;
 }
 
-#features .feature {
+.features .feature {
 	margin-top: 30px;
 	margin-bottom: 54px;
 }
 
-#features .right {
+.features .right {
 	padding-left: 32px;
 	float: right;
 }
 
-#features .left {
+.features .left {
 	padding-right: 32px;
 	float: left;
 }
 
-#features h3 {
+.features h3 {
 	font: 16px/24px sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -396,7 +395,7 @@ ul.features li:nth-child(even) {
 /* c. Screenshots
 /* ------------------------------------------------------------------ */
 
-#screenshots {
+.content {
 	background: #fff url(img/grey.png);
 	padding-top: 96px;
 	padding-bottom: 120px;
@@ -406,7 +405,7 @@ ul.features li:nth-child(even) {
 @media (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 
-	#screenshots {
+	.content {
 		background: #fff url(img/grey_@2X.png);
 		background-size: 397px 322px;
 	}
@@ -422,7 +421,8 @@ ul.features li:nth-child(even) {
 	background: #fff;
 	overflow: hidden;
 	position: relative;
-	height: 250px;
+	width: 100%;
+	max-height: 300px;
 
 	-webkit-transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3s ease-in-out;
@@ -515,26 +515,24 @@ ul.features li:nth-child(even) {
 /* g. Call To Action Section
 /* ------------------------------------------------------------------ */
 
-#call-to-action {
+.feature-overview {
 	background: #23292F;
 	padding-top: 72px;
 	padding-bottom: 48px;
 }
 
-#call-to-action h1 {
+.feature-overview h1 {
 	font: 18px/24px sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: #fff;
 }
 
-#call-to-action h1 span {
+.feature-overview h1 span {
 	display: none;
 }
 
-#call-to-action .header-col h1:before {
-	font-family: 'FontAwesome';
-	content: "\f093";
+.big-fa {
 	padding-right: 18px;
 	padding-top: 6px;
 	font-size: 72px;
@@ -544,314 +542,33 @@ ul.features li:nth-child(even) {
 	color: #EBEEEE;
 }
 
-#call-to-action .action {
+.feature-overview .action {
 	margin-top: 18px;
 }
 
-#call-to-action .action .button {
+.feature-overview .action .button {
 	text-align: center;
 }
 
-#call-to-action h2 {
+.feature-overview h2 {
 	font: 28px/36px sans-serif;
 	color: #EBEEEE;
 	margin-bottom: 12px;
 }
 
-#call-to-action h2 a {
+.feature-overview h2 a {
 	color: inherit;
 }
 
-#call-to-action p {
+.feature-overview p {
 	color: #697B8B;
 	font-size: 17px;
 	padding-right: 5px;
 }
 
-#call-to-action p span {
+.feature-overview p span {
 	font-family: sans-serif;
 	color: #A9B5C0;
-}
-
-/* ------------------------------------------------------------------
-/* h. Testimonials
-/* ------------------------------------------------------------------ */
-
-#testimonials {
-	background: #10999E url(img/escheresque.png);
-	padding-top: 112px;
-	padding-bottom: 66px;
-	position: relative;
-	min-height: 198px;
-	width: 100%;
-	overflow: hidden;
-	text-align: center;
-}
-
-/* For high-res devices */
-@media (-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-
-	#testimonials {
-		background: #10999E url(img/escheresque_@2X.png);
-		background-size: 46px 29px;
-	}
-
-}
-
-#testimonials .quote-left,
-#testimonials .quote-right {
-	position: absolute;
-	top: 50%;
-	color: #fff;
-	font-size: 40px;
-	margin-top: -25px;
-}
-
-#testimonials .quote-left {
-	left: 5%;
-}
-
-#testimonials .quote-right {
-	right: 5%;
-}
-
-#testimonials .text-container {
-	width: 86%;
-	margin: 0 auto;
-}
-
-#testimonials h1 {
-	font: 16px/24px sans-serif;
-	color: #6AECF0;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-	margin-bottom: 36px;
-}
-
-/*	Blockquotes */
-#testimonials blockquote {
-	margin: 0 0px 30px 0px;
-	padding-left: 0;
-	position: relative;
-}
-
-#testimonials blockquote:before {
-	content: none;
-}
-
-#testimonials blockquote p {
-	font-family: sans-serif;
-	font-style: normal;
-	color: #fff;
-	padding: 0;
-	font-size: 26px;
-	line-height: 42px;
-}
-
-#testimonials blockquote cite {
-	display: block;
-	font-size: 12px;
-	font-style: normal;
-	line-height: 18px;
-	color: #fff;
-}
-
-#testimonials blockquote cite:before {
-	content: "\2014 \0020";
-}
-
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited {
-	color: #8B9798;
-	border: none
-}
-
-/* Flex Slider
-/* ------------------------------------------------------------------ */
-
-/* Reset */
-.flexslider a:active,
-.flexslider a:focus {
-	outline: none;
-}
-
-.slides,
-.flex-control-nav,
-.flex-direction-nav {
-	margin: 0;
-	padding: 0;
-	list-style: none;
-}
-
-.slides li {
-	margin: 0;
-	padding: 0;
-}
-
-/* Necessary Styles */
-.flexslider {
-	position: relative;
-	zoom: 1;
-	margin: 0;
-	padding: 0;
-}
-
-.flexslider .slides {
-	zoom: 1;
-}
-
-.flexslider .slides > li {
-	position: relative;
-}
-
-/* Hide the slides before the JS is loaded. Avoids image jumping */
-.flexslider .slides > li {
-	display: none;
-	-webkit-backface-visibility: hidden;
-}
-
-/* Suggested container for slide animation setups. Can replace this with your own */
-.flex-container {
-	zoom: 1;
-	position: relative;
-}
-
-/* Clearfix for .slides */
-.slides:before,
-.slides:after {
-	content: " ";
-	display: table;
-}
-
-.slides:after {
-	clear: both;
-}
-
-/* No JavaScript Fallback */
-/* If you are not using another script, such as Modernizr, make sure you
- * include js that eliminates this class on page load */
-.no-js .slides > li:first-child {
-	display: block;
-}
-
-/* Slider Styles */
-.slides {
-	zoom: 1;
-}
-
-.slides > li {
-	/*margin-right: 5px; */
-	overflow: hidden;
-}
-
-/* Control Nav */
-.flex-control-nav {
-	width: 100%;
-	text-align: center;
-}
-
-.flex-control-nav li {
-	margin: 0 6px;
-	display: inline-block;
-	zoom: 1;
-	*display: inline;
-}
-
-.flex-control-paging li a {
-	width: 12px;
-	height: 12px;
-	display: block;
-	background: #ddd;
-	background: rgba(255, 255, 255, .3);
-	cursor: pointer;
-	text-indent: -9999px;
-	border-radius: 20px;
-	box-shadow: inset 0 0 3px rgba(255, 255, 255, .3);
-}
-
-.flex-control-paging li a:hover {
-	background: #CCC;
-	background: rgba(255, 255, 255, .7);
-}
-
-.flex-control-paging li a.flex-active {
-	background: #fff;
-	background: rgba(255, 255, 255, .9);
-	cursor: default;
-}
-
-/* ------------------------------------------------------------------ */
-/* i. Subscribe Section
-/* ------------------------------------------------------------------ */
-
-#subscribe {
-	background: #23292F;
-	padding-top: 96px;
-	padding-bottom: 66px;
-	overflow: hidden;
-	text-align: center;
-}
-
-#subscribe a, #subscribe a:visited {
-	color: #fff;
-}
-
-#subscribe a:hover, #subscribe a:focus {
-	color: #11ABB0;
-}
-
-#subscribe h1 {
-	color: #fff;
-}
-
-#subscribe p {
-	color: #7A7A7A;
-	text-align: center;
-	padding: 0;
-}
-
-/* mailchimp signup form */
-#mc_embed_signup {
-	background: none;
-	clear: both;
-	display: block;
-	margin: 6px auto 30px auto;
-	width: 70%;
-	text-align: center;
-}
-
-#mc_embed_signup:before,
-#mc_embed_signup:after {
-	content: " ";
-	display: table;
-}
-
-#mc_embed_signup:after {
-	clear: both;
-}
-
-#mc_embed_signup input[type="submit"] {
-	float: right;
-	height: 60px;
-	margin: 0;
-	padding: 0 20px;
-	font-size: 16px;
-	line-height: 60px;
-	width: 47%;
-}
-
-#mc_embed_signup input[type="email"] {
-	display: inline;
-	float: left;
-	height: 60px;
-	margin: 0;
-	padding: 18px 20px;
-	font-size: 18px;
-	line-height: 24px;
-	font-family: 'montserrat-regular', sans-serif;
-	width: 47%;
-	text-align: center;
 }
 
 /* ------------------------------------------------------------------ */

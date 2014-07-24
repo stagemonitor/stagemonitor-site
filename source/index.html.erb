@@ -7,12 +7,15 @@ title: stagemonitor
 <section id="hero">
 
 	<div class="row">
+		<a href="https://github.com/stagemonitor/stagemonitor">
+			<img style="position: absolute; top: 54px; right: 0; border: 0;"
+				 src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
+				 alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
+		</a>
 
 		<div class="twelve columns">
-
 			<div class="hero-text">
 				<img src="images/stagemonitor-logo-light-big.png"/>
-
 				<p>an open source solution to application performance monitoring for java server applications</p>
 			</div>
 			<div class="buttons">
@@ -23,23 +26,104 @@ title: stagemonitor
 			<!--<div class="hero-image">-->
 				<!--<img src="images/hero-image.png" alt=""/>-->
 			<!--</div>-->
-
 		</div>
 
 	</div>
-
 </section> <!-- Homepage Hero end -->
 
-
-<!-- Features Section
+<!-- Kibana
 ================================================== -->
-<section id='features'>
+<section id="analyze-requests" class="feature-overview">
+	<div class="row">
+		<div class="two columns header-col">
+			<h1><i class="fa fa-tachometer big-fa"></i></h1>
+		</div>
+		<div class="seven columns">
+			<h2>Analyze Requests</h2>
+			<p>
+				Stagemonitor includes a <span>Kibana</span> dashboard that can be used to get detailed information about incoming
+				requests. You don't need to set up logstash or parse any logs for that.
+			</p>
+		</div>
+		<div class="three columns action">
+			<a href="https://github.com/stagemonitor/stagemonitor/wiki/Request-and-Call-Stack-Dashboard" class="button">More Information</a>
+		</div>
+	</div>
+</section>
+<section class="features content">
 
 	<div class="row feature">
+		<div class="eight columns right">
+			<h3>Powerful query and filtering capabilities</h3>
+			<p>
+				Filter requests by queries or by selecting charts. You could use the query section to get details about
+				requests that caused errors or where slow.
+			</p>
+		</div>
 
+		<div class="eight columns left">
+			<div class="columns item">
+				<div class="item-wrap">
+					<a href="images/stagemonitor-kibana-filter.png" data-imagelightbox="a">
+						<img src="images/stagemonitor-kibana-filter.png" alt="Filter Requests">
+						<div class="overlay"></div>
+						<div class="link-icon"><i class="icon-plus"></i></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="row feature">
+		<div class="six columns left">
+			<h3>Detailed Request Traces</h3>
+			<p>
+				In this section, you can find out about the root cause of slow or failed requests by analyzing their
+				method call trees (including sql statements and parameters), stack traces, request headers as well as
+				information about the user's login name, ip, browser and operating system
+			</p>
+		</div>
+
+		<div class="six columns left">
+			<div class="columns item">
+				<div class="item-wrap">
+					<a href="images/stagemonitor-kibana-details.png" data-imagelightbox="a">
+						<img src="images/stagemonitor-kibana-details.png" alt="Analyze Requests">
+						<div class="overlay"></div>
+						<div class="link-icon"><i class="icon-plus"></i></div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</section>
+
+<!-- Grafana
+================================================== -->
+<section class="feature-overview">
+	<div class="row">
+		<div class="two columns header-col">
+			<h1><i class="fa fa-bar-chart-o big-fa"></i></h1>
+		</div>
+		<div class="seven columns">
+			<h2>Grafana Dashboards</h2>
+			<p>
+				Looking for an awesome and reliable webhosting? Try
+				<a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
+				Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.
+			</p>
+		</div>
+		<div class="three columns action">
+		</div>
+	</div>
+</section>
+
+<section class="features content">
+
+	<div class="row feature">
 		<div class="six columns right">
 			<h3>Analyze Requests and Call Stacks</h3>
-
 			<p>
 				Filter requests by queries or by selecting charts. Get details about the request including the call
 				stack (aka call tree) rendered with state-of-the-art ascii-art
@@ -49,37 +133,33 @@ title: stagemonitor
 		<div class="six columns left">
 			<div class="columns item">
 				<div class="item-wrap">
-					<a href="https://cloud.githubusercontent.com/assets/2163464/3207952/c2e08e16-ee11-11e3-87fe-4eb2f761931c.png" data-imagelightbox="a">
-						<img src="https://cloud.githubusercontent.com/assets/2163464/3207952/c2e08e16-ee11-11e3-87fe-4eb2f761931c.png" alt="Analyze Requests and Call Stacks">
+					<a href="images/dashboard-request.png" data-imagelightbox="a">
+						<img src="images/dashboard-request.png" alt="Analyze Requests and Call Stacks">
 						<div class="overlay"></div>
 						<div class="link-icon"><i class="icon-plus"></i></div>
 					</a>
 				</div>
 			</div>
 		</div>
-
 	</div>
 
 	<div class="row feature">
-
 		<div class="six columns left">
 			<h3>Request Dashboard</h3>
-
 			<ul>
 				<li>Statistical distribution of response times</li>
 				<li>Throughput</li>
 				<li>Requests are grouped by use cases. Usecases are automatically detected if you use Spring MVC. For other technologies, you can group URLs by regular expressions</li>
 				<li>Errors</li>
 			</ul>
-
 		</div>
 
 		<div class="six columns right">
 			<div class="six columns feature-media left">
 				<div class="columns item">
 					<div class="item-wrap">
-						<a href="https://cloud.githubusercontent.com/assets/2163464/3200110/1cf14602-ed77-11e3-8f6b-67251b8b53a2.PNG" data-imagelightbox="a">
-							<img src="https://cloud.githubusercontent.com/assets/2163464/3200110/1cf14602-ed77-11e3-8f6b-67251b8b53a2.PNG" alt="Request Dashboard">
+						<a href="images/dashboard-memory.png" data-imagelightbox="a">
+							<img src="images/dashboard-memory.png" alt="Request Dashboard">
 							<div class="overlay"></div>
 							<div class="link-icon"><i class="icon-plus"></i></div>
 						</a>
@@ -87,232 +167,6 @@ title: stagemonitor
 				</div>
 			</div>
 		</div>
-
 	</div>
 
-	<div class="row feature">
-
-		<div class="six columns right">
-			<h3>JVM Dashboards</h3>
-			<ul>
-				<li>Utilisation of all memory pools</li>
-				<li>CPU utilisation of the JVM process</li>
-			</ul>
-		</div>
-
-		<div class="six columns feature-media left">
-			<img src="images/feature-image-3.png" alt=""/>
-		</div>
-
-	</div>
-
-</section> <!-- Homepage Hero end -->
-
-
-<!-- Call-To-Action Section
-================================================== -->
-<section id="call-to-action">
-
-	<div class="row">
-
-		<div class="two columns header-col">
-
-			<h1><span>Get Hosting.</span></h1>
-
-		</div>
-
-		<div class="seven columns">
-
-			<h2><a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT">Host This Template on Dreamhost.</a></h2>
-
-			<p>Looking for an awesome and reliable webhosting? Try
-				<a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>.
-				Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.
-				<!-- Simply type	the promocode in the box labeled “Promo Code” when placing your order. --></p>
-
-		</div>
-
-		<div class="three columns action">
-
-			<a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT" class="button">Sign Up Now</a>
-
-		</div>
-
-	</div>
-
-</section> <!-- Call-To-Action Section End-->
-
-
-<!-- Screenshots
-================================================== -->
-<section id="screenshots">
-
-	<div class="row section-head">
-
-		<h1>Product Screenshots.</h1>
-
-		<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
-			aperiam,
-			eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
-			ipsam
-			voluptatem quia voluptas sit aspernatur aut odit aut fugit.
-		</p>
-
-	</div>
-
-	<div class="row">
-
-		<div class="twelve columns">
-
-			<!-- screenshots-wrapper -->
-			<div id="screenshots-wrapper" class="bgrid-quarters s-bgrid-thirds cf">
-
-				<div class="columns item">
-					<div class="item-wrap">
-
-						<a href="images/screenshots/big/b-line-icons.jpg" data-imagelightbox="a">
-							<img src="images/screenshots/line-icons.jpg" alt="Line Icons">
-
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div>
-				<!-- item end -->
-
-				<div class="columns item">
-					<div class="item-wrap">
-
-						<a href="images/screenshots/big/b-hipster.jpg" data-imagelightbox="a">
-							<img src="images/screenshots/hipster.jpg" alt="Hipster">
-
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div>
-				<!-- item end -->
-
-				<div class="columns item">
-					<div class="item-wrap">
-
-						<a href="images/screenshots/big/b-authentic-vintage.jpg" data-imagelightbox="a">
-							<img src="images/screenshots/authentic-vintage.jpg" alt="Authentic Vintage">
-
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div>
-				<!-- item end -->
-
-				<div class="columns item">
-					<div class="item-wrap">
-
-						<a href="images/screenshots/big/b-spot-uv-logo.jpg" data-imagelightbox="a">
-							<img src="images/screenshots/spot-uv-logo.jpg" alt="Spot UV Logo">
-
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div>
-				<!-- item end -->
-
-				<div class="columns item">
-					<div class="item-wrap">
-
-						<a href="images/screenshots/big/b-tshirt-mockup.jpg" data-imagelightbox="a">
-							<img src="images/screenshots/tshirt-mockup.jpg" alt="TShirt Mockup">
-
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div>
-				<!-- item end -->
-
-				<div class="columns item">
-					<div class="item-wrap">
-
-						<a href="images/screenshots/big/b-abstract-vector.jpg" data-imagelightbox="a">
-							<img src="images/screenshots/abstract-vector.jpg" alt="Abstract Vector">
-
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div>
-				<!-- item end -->
-
-				<div class="columns item">
-					<div class="item-wrap">
-
-						<a href="images/screenshots/big/b-embossed-paper.jpg" data-imagelightbox="a">
-							<img src="images/screenshots/embossed-paper.jpg" alt="Embossed Paper">
-
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div>
-				<!-- item end -->
-
-				<div class="columns item">
-					<div class="item-wrap">
-
-						<a href="images/screenshots/big/b-judah.jpg" data-imagelightbox="a">
-							<img src="images/screenshots/judah.jpg" alt="Judah">
-
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="icon-plus"></i></div>
-						</a>
-
-					</div>
-				</div>
-				<!-- item end -->
-
-			</div>
-			<!-- portfolio-wrapper end -->
-
-		</div>
-		<!-- twelve columns end -->
-
-	</div>
-	<!-- end row -->
-
-</section> <!-- Screenshots End -->
-
-
-<!-- Testimonials Section
-================================================== -->
-<section id="testimonials">
-
-	<div class="row content">
-
-		<span><i class="quote-left fa fa-quote-left"></i></span>
-
-		<div class="text-container">
-
-			<div class="twelve columns">
-
-				<h1>What People Are Saying.</h1>
-
-			</div>
-
-		</div>
-		<!-- text-container ends -->
-
-		<span><i class="quote-right fa fa-quote-right"></i></span>
-
-	</div>
-	<!-- row ends -->
-
-</section> <!-- Testimonials Section End-->
+</section>
