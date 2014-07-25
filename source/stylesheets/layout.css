@@ -55,6 +55,17 @@ h2, h3 {
 }
 
 
+h2 {
+	font: 28px/36px 'Raleway', sans-serif;
+	margin-bottom: 12px;
+}
+
+.center {
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* ------------------------------------------------------------------ */
 /* b. Header Styles
 /* ------------------------------------------------------------------ */
@@ -118,7 +129,7 @@ header .header-social li a:hover {
 
 .scrolldown a {
 	font-size: 42px;
-	color: #c4c4c4;
+	color: #e0e0e0;
 	margin-top: 35px;
 
 	-webkit-transition: all .3s ease-in-out;
@@ -133,11 +144,8 @@ header .header-social li a:hover {
 	background-color: transparent;
 }
 
-a {
-	text-decoration: none;
-}
-
 a:hover, a:focus {
+	text-decoration: none;
 	color: #fff;
 }
 
@@ -201,9 +209,8 @@ a:hover, a:focus {
 	margin-left: -50px;
 }
 
-.feature-overview h1 {
-	font: 18px/24px 'Raleway', sans-serif;
-	text-transform: uppercase;
+.feature-overview h2 {
+	font: 24px/24px 'Raleway', sans-serif;
 	letter-spacing: 3px;
 	color: #fff;
 }
@@ -225,16 +232,6 @@ a:hover, a:focus {
 
 .feature-overview .action .button {
 	text-align: center;
-}
-
-.feature-overview h2 {
-	font: 28px/36px 'Raleway', sans-serif;
-	color: #EBEEEE;
-	margin-bottom: 12px;
-}
-
-.feature-overview h2 a {
-	color: inherit;
 }
 
 .feature-overview p {
@@ -660,19 +657,51 @@ a#imagelightbox-close:hover, a#imagelightbox-close:focus {
 	letter-spacing: -1px;
 }
 
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 768px) {
-	.featurette-heading {
-		font-size: 35px;
-	}
+/*Team*/
+#team {
+	background: #23292F;
+	padding-top: 96px;
+	padding-bottom: 66px;
+	overflow: hidden;
+	text-align: center;
 }
 
-@media (min-width: 992px) {
-	.featurette-heading {
-		margin-top: 120px;
-	}
+#team h2 {
+	color: #EBEEEE;
 }
+
+.team-member {
+	margin-bottom: 50px;
+	text-align: center;
+}
+
+.team-member img {
+	margin: 0 auto;
+	border: 3px solid #fff;
+}
+
+.team-member h4 {
+	margin-top: 25px;
+	margin-bottom: 0;
+	text-transform: none;
+}
+
+.team-member p {
+	margin-top: 0;
+}
+
+ul.social-buttons li a {
+	display: block;
+	width: 40px;
+	height: 40px;
+	border-radius: 100%;
+	font-size: 20px;
+	line-height: 40px;
+	outline: 0;
+	color: #fff;
+	background-color: #222;
+	-webkit-transition: all .3s;
+	-moz-transition: all .3s;
+	transition: all .3s;
+}
+
