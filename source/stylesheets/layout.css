@@ -5,22 +5,6 @@
 *   05-02-2014
 =====================================================================
 
-   TOC:
-   a. General and Common Styles
-   b. Header Styles
-   c. Hero Section
-   d. Features Section
-   e. Pricing Section
-   f. Screenshots Section
-   g. Call To Action Section
-   h. Testimonials Section
-   i. Subscribe Section
-   j. Footer
-   k. lightbox
-
-   todo: check bug in mobile z-index
-
-===================================================================== */
 
 /* ------------------------------------------------------------------ */
 /* a. General and Common Styles
@@ -35,7 +19,10 @@
 
 body {
 	background: #181d21;
-	font: 'Raleway', sans-serif;
+}
+
+* {
+	font-family: 'Raleway', sans-serif;
 }
 
 ul {
@@ -50,7 +37,7 @@ ul {
 }
 
 .section-head h1 {
-	font: 20px/36px sans-serif;
+	font: 20px/36px 'Raleway', sans-serif;
 	color: #333;
 	text-transform: uppercase;
 	letter-spacing: 1.5px;
@@ -148,171 +135,45 @@ header .header-social li a:hover {
 }
 .scrolldown a:hover { color: #fff; }
 
-/* primary navigation
---------------------------------------------------------------------- */
-#nav-wrap, #nav-wrap ul, #nav-wrap li, #nav-wrap a {
-	margin: 0;
-	padding: 0;
-	border: none;
-	outline: none;
-}
-
-/* nav-wrap */
-#nav-wrap {
-	font: 12px 'Raleway', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 1.5px;
-	float: left;
-}
-
-/* hide toggle button */
-#nav-wrap > a {
-	display: none;
-}
-
-ul#nav {
-	min-height: 54px;
-	width: auto;
-
-	/* left align the menu */
-	text-align: left;
-}
-
-ul#nav li {
-	position: relative;
-	list-style: none;
-	height: 54px;
-	display: inline-block;
-
-}
-
-/* Links */
-ul#nav li a {
-
-	/* 8px padding top + 8px padding bottom + 38px line-height = 54px */
-	display: inline-block;
-	padding: 8px 8px;
-	line-height: 38px;
-	text-decoration: none;
-	text-align: left;
-	color: #87a3bc;
-
-	-webkit-transition: color .2s ease-in-out;
-	-moz-transition: color .2s ease-in-out;
-	-o-transition: color .2s ease-in-out;
-	-ms-transition: color .2s ease-in-out;
-	transition: color .2s ease-in-out;
-}
-
-ul#nav li a:hover {
-	color: #fff;
-}
-
-ul#nav li a:active {
-	background-color: transparent !important;
-}
-
-ul#nav li.current a {
-	color: #fff;
-}
 
 .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover, a:focus {
+	color: #fff;
 }
 
 /* ------------------------------------------------------------------ */
 /* c. Hero Section
 /* ------------------------------------------------------------------ */
 
-#hero {
-	position: relative;
-	display: table;
-	width: 100%;
-	height: 100%;
-	padding: 100px 0;
-	text-align: center;
-	min-height: 900px;
+.jumbotron {
 	background: #23292f url('../images/background2.jpg') no-repeat top left;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 	overflow: hidden;
-}
-
-#hero .row {
-	display: table-cell;
-	vertical-align: middle;
-}
-
-/* Hero Text */
-.hero-text {
-	color: #d8e3e8;
-	width: 83%;
+	padding: 100px 0;
 	text-align: center;
-	margin: 54px auto 24px auto;
-}
-
-.hero-text h1 {
-	font: 40px/1.2em sans-serif;
+	min-height: 900px;
+	position: relative;
 	color: #fff;
-	padding: 0;
-	margin: 0;
-	text-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
+	margin-bottom: 0px;
 }
 
-.hero-text h1 span,
-.hero-text a {
-	color: #11ABB0;
+#logo {
+	padding-top: 5px;
 }
 
-.hero-text p {
-	font: 16px/30px sans-serif;
-	padding: 0;
-	margin: 12px 8% 0;
-	text-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
-}
-
-/* Hero Image */
-.hero-image {
-	width: 100%;
-	margin: 0 auto;
-}
-
-.hero-image img {
-	vertical-align: bottom;
-	display: block;
-}
-
-/* Hero CTA Buttons */
-#hero .buttons {
-	text-align: center;
-	margin: 0 0 18px 0;
-}
-
-#hero .buttons .button {
-	font: 14px/24px sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 2px;
-}
-
-#hero .buttons .trial {
-	background: #f64b39;
-	margin-right: 30px;
-
-	-webkit-animation-delay: 10s;
-	-moz-animation-delay: 10s;
-	-ms-animation-delay: 10s;
-	-o-animation-delay: 10s;
-	-webkit-animation-iteration-count: 3;
-	-moz-animation-iteration-count: 3;
-}
-
-#hero .buttons .trial:hover {
-	background: #F86A5A;
-}
-
-#hero .buttons .learn-more {
+#hero-content {
+	margin-top: 150px;
+	line-height: 4em;
 }
 
 .content {
@@ -348,7 +209,7 @@ ul#nav li.current a {
 }
 
 .feature-overview h1 {
-	font: 18px/24px sans-serif;
+	font: 18px/24px 'Raleway', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	color: #fff;
@@ -374,7 +235,7 @@ ul#nav li.current a {
 }
 
 .feature-overview h2 {
-	font: 28px/36px sans-serif;
+	font: 28px/36px 'Raleway', sans-serif;
 	color: #EBEEEE;
 	margin-bottom: 12px;
 }
@@ -397,8 +258,6 @@ ul#nav li.current a {
 .more-information {
 	margin-top: 20px;
 }
-
-
 
 
 .item .item-wrap {
@@ -467,7 +326,7 @@ ul#nav li.current a {
 
 .item .item-wrap img {
 	vertical-align: bottom;
-	width: 150%;
+	width: 100%;
 
 	-webkit-transition: all 0.3s ease-out;
 	-moz-transition: all 0.3s ease-out;
@@ -523,7 +382,7 @@ footer a:hover, footer a:focus {
 footer .right-cols .columns p { margin-bottom: 6px; }
 
 footer h3 {
-	font: 13px/24px 'opensans-semibold', sans-serif;
+	font: 13px/24px 'Raleway', sans-serif;
 	margin-bottom: 0;
 	font-weight: normal;
 	color: #fff;

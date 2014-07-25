@@ -53,31 +53,33 @@
    ================================================== -->
 <header>
 
-	<div class="logo">
-		<a class="smoothscroll" href="#hero"><img alt="stagemonitor" src="images/logo.png"></a>
-	</div>
+	<nav class="navbar navbar-inverse navbar-default" role="navigation">
+		<div class="container-fluid" id="navfluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigationbar">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a id="logo" class="navbar-brand smoothscroll" href="#hero"><img alt="stagemonitor" src="images/logo.png"></a>
+			</div>
 
-	<nav id="nav-wrap">
+			<div class="collapse navbar-collapse" id="navigationbar">
+				<ul class="nav navbar-nav">
+					<li><a class="smoothscroll" href="#analyze-requests">Features</a></li>
+					<li><a href="https://github.com/stagemonitor/stagemonitor/wiki">Documentation</a></li>
+				</ul>
+				<ul class="nav navbar-nav navbar-right header-social">
+					<li>
+						<iframe allowtransparency="true" class="github-btn" frameborder="false" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=stagemonitor&repo=stagemonitor&type=watch&count=true&size=small" title="Star on GitHub" width="104"></iframe>
+					</li>
+					<li><a href="https://github.com/stagemonitor/stagemonitor"><i class="fa fa-github"></i></a></li>
+				</ul>
+			</div>
 
-		<a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show Menu</a>
-		<a class="mobile-btn" href="#" title="Hide navigation">Hide Menu</a>
-
-		<ul id="nav" class="nav">
-			<li><a class="smoothscroll" href="#analyze-requests">Features</a></li>
-			<li><a href="https://github.com/stagemonitor/stagemonitor/wiki">Documentation</a></li>
-		</ul>
-		<!-- end #nav -->
-
+		</div>
 	</nav>
-	<!-- end #nav-wrap -->
-
-	<ul class="header-social">
-		<li>
-			<iframe allowtransparency="true" class="github-btn" frameborder="false" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=stagemonitor&repo=stagemonitor&type=watch&count=true&size=small" title="Star on GitHub" width="104"></iframe>
-		</li>
-		<li><a href="https://github.com/stagemonitor/stagemonitor"><i class="fa fa-github"></i></a></li>
-	</ul>
-
 </header>
 <!-- Header End -->
 <%= yield %>
