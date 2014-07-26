@@ -37,159 +37,49 @@ title: stagemonitor
 	</div>
 </section> <!-- Homepage Hero end -->
 
-<!-- Kibana
-================================================== -->
-<section id="analyze-requests" class="feature-overview">
-	<div class="container">
+<% data.feature_categories.each do |category| %>
+	<section id="<%= category.id %>" class="feature-overview">
+		<div class="container">
 
-		<div class="row">
-			<div class="col-lg-2">
-				<i class="fa fa-tachometer big-fa"></i>
-			</div>
-			<div class="col-lg-7">
-				<h2>Analyze Requests</h2>
-				<p>
-					Stagemonitor includes a <span>Kibana</span> dashboard that can be used to get detailed information about incoming
-					requests. You don't need to set up logstash or parse any logs for that.
-				</p>
-			</div>
-		</div>
-	</div>
-</section>
-<section class="features content">
-	<div class="container">
-
-		<div class="row featurette">
-			<div class="col-md-6">
-				<h3 class="featurette-heading">Powerful query and filtering capabilities</h3>
-				<p>
-					Filter requests by queries or by selecting charts. You could use the query section to get details about
-					requests that caused errors or where slow.
-				</p>
-			</div>
-
-			<div class="col-md-6">
-				<div class="columns item">
-					<div class="item-wrap">
-						<a href="images/stagemonitor-kibana-filter.png" class="img-responsive" data-imagelightbox="a">
-							<img src="images/stagemonitor-kibana-filter.png" alt="Filter Requests">
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="fa fa-plus"></i></div>
-						</a>
-					</div>
+			<div class="row">
+				<div class="col-lg-2">
+					<i class="fa <%= category.icon %> big-fa"></i>
+				</div>
+				<div class="col-lg-7">
+					<h2><%= category.name %></h2>
+					<p><%= category.description %></p>
 				</div>
 			</div>
 		</div>
+	</section>
+	<section class="features content">
+		<div class="container">
 
-		<hr class="featurette-divider">
-
-		<div class="row featurette">
-
-			<div class="col-md-6 pull-right">
-				<h3 class="featurette-heading">Detailed Request Traces</h3>
-				<p>
-					In this section, you can find out about the root cause of slow or failed requests by analyzing their
-					method call trees (including sql statements and parameters), stack traces, request headers as well as
-					information about the user's login name, ip, browser and operating system
-				</p>
-			</div>
-
-			<div class="col-md-6">
-				<div class="columns item">
-					<div class="item-wrap">
-						<a href="images/stagemonitor-kibana-details.png" data-imagelightbox="a">
-							<img src="images/stagemonitor-kibana-details.png" alt="Analyze Requests">
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="fa fa-plus"></i></div>
-						</a>
+			<% category.features.each_with_index do |feature,index| %>
+				<div class="row featurette">
+					<div class="col-md-6<% if index.even? %> pull-right<% end %>">
+						<h3 class="featurette-heading"><%= feature.name %></h3>
+						<p><%= feature.description %></p>
 					</div>
-				</div>
-			</div>
 
-
-		</div>
-
-	</div>
-
-</section>
-
-<!-- Grafana
-================================================== -->
-<section id="analyze-requests" class="feature-overview">
-	<div class="container">
-
-		<div class="row">
-			<div class="col-lg-2">
-				<i class="fa fa-bar-chart-o big-fa"></i>
-			</div>
-			<div class="col-lg-7">
-				<h2>Grafana Dashboards</h2>
-				<p>
-					Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-					Aspernatur aut beatae dolor dolores eaque illum itaque magni necessitatibus, optio placeat quo repudiandae rerum ullam velit veritatis vero voluptatum. Numquam, rem.
-				</p>
-			</div>
-		</div>
-	</div>
-</section>
-
-<section class="features content">
-	<div class="container">
-
-		<div class="row featurette">
-			<div class="col-md-6">
-				<h3 class="featurette-heading">Analyze Requests and Call Stacks</h3>
-				<p>
-					Filter requests by queries or by selecting charts. Get details about the request including the call
-					stack (aka call tree) rendered with state-of-the-art ascii-art
-				</p>
-			</div>
-
-			<div class="col-md-6">
-				<div class="columns item">
-					<div class="item-wrap">
-						<a href="images/dashboard-request.png" data-imagelightbox="a">
-							<img src="images/dashboard-request.png" alt="Analyze Requests and Call Stacks">
-							<div class="overlay"></div>
-							<div class="link-icon"><i class="fa fa-plus"></i></div>
-						</a>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<hr class="featurette-divider">
-
-
-		<div class="row featurette">
-			<div class="col-md-6 pull-right">
-				<h3 class="featurette-heading">Request Dashboard</h3>
-				<ul>
-					<li>Statistical distribution of response times</li>
-					<li>Throughput</li>
-					<li>Requests are grouped by use cases. Usecases are automatically detected if you use Spring MVC. For other technologies, you can group URLs by regular expressions</li>
-					<li>Errors</li>
-				</ul>
-			</div>
-
-			<div class="col-md-6">
-				<div class="six columns featurette-media left">
-					<div class="columns item">
-						<div class="item-wrap">
-							<a href="images/dashboard-memory.png" data-imagelightbox="a">
-								<img src="images/dashboard-memory.png" alt="Request Dashboard">
-								<div class="overlay"></div>
-								<div class="link-icon"><i class="fa fa-plus"></i></div>
-							</a>
+					<div class="col-md-6">
+						<div class="columns item">
+							<div class="item-wrap">
+								<a href="<%= feature.image %>" class="img-responsive" data-imagelightbox="a">
+									<img src="<%= feature.image %>" alt="Filter Requests">
+									<div class="overlay"></div>
+									<div class="link-icon"><i class="fa fa-plus"></i></div>
+								</a>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+				<% unless index == category.features.size - 1 %><hr class="featurette-divider"><% end %>
+			<% end %>
+
 		</div>
-
-	</div>
-
-</section>
+	</section>
+<% end %>
 
 <section id="team">
 	<div class="container">

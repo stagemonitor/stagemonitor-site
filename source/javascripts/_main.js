@@ -1,4 +1,12 @@
 (function ($) {
+	var resizeHero = function(){
+		$('#hero').css('max-height', $(window).height()+'px');
+	};
+	resizeHero();
+	$(window).resize(function() {
+		resizeHero();
+	});
+
 
 	/*----------------------------------------------------*/
 	/* Smooth Scrolling

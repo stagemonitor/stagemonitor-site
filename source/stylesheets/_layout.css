@@ -141,7 +141,7 @@ header .header-social li a:hover {
 
 .scrolldown a {
 	font-size: 42px;
-	color: #e0e0e0;
+	color: #b4b4b4;
 	margin-top: 35px;
 }
 .scrolldown a:hover { color: #fff; }
@@ -155,16 +155,16 @@ header .header-social li a:hover {
 /* c. Hero Section
 /* ------------------------------------------------------------------ */
 
-.jumbotron {
+#hero {
 	background: #23292f url('../images/intro-bg.jpg') no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;
 	-o-background-size: cover;
 	overflow: hidden;
-	padding: 100px 0;
+	padding: 75px 0;
 	text-align: center;
-	min-height: 900px;
+	height: 900px;
 	position: relative;
 	color: #fff;
 	margin-bottom: 0px;
@@ -217,7 +217,6 @@ header .header-social li a:hover {
 	color: #fff;
 }
 
-
 .big-fa {
 	padding-right: 18px;
 	padding-top: 6px;
@@ -226,14 +225,6 @@ header .header-social li a:hover {
 	text-align: center;
 	float: right;
 	color: #EBEEEE;
-}
-
-.feature-overview .action {
-	margin-top: 18px;
-}
-
-.feature-overview .action .button {
-	text-align: center;
 }
 
 .feature-overview p {
@@ -245,10 +236,6 @@ header .header-social li a:hover {
 .feature-overview p span {
 	font-family: sans-serif;
 	color: #A9B5C0;
-}
-
-.more-information {
-	margin-top: 20px;
 }
 
 
@@ -425,7 +412,7 @@ footer .socialize .fa {
 /* Featurettes
 ------------------------- */
 .featurette-divider {
-	margin: 80px 0; /* Space out the Bootstrap <hr> more */
+	margin: 60px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -433,6 +420,7 @@ footer .socialize .fa {
 	font-weight: 300;
 	line-height: 1;
 	letter-spacing: -1px;
+	margin-top: 40px;
 }
 
 /*Team*/

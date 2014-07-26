@@ -1,0 +1,32 @@
+- id: analyze-requests
+  name: Analyze Requests
+  description: Stagemonitor includes a Kibana dashboard that can be used to get detailed information about incoming
+    requests. You don't need to set up logstash or parse any logs for that.
+  icon: fa-tachometer
+  features:
+    - name: Powerful query and filtering capabilities
+      description: Filter requests by queries or by selecting charts. You could use the query section to get details
+        about requests that caused errors or where slow.
+      image: images/stagemonitor-kibana-filter.png
+    - name: Detailed Request Traces
+      description: In this section, you can find out about the root cause of slow or failed requests by analyzing their
+        method call trees (including sql statements and parameters), stack traces, request headers as well as
+        information about the user's login name, ip, browser and operating system.
+      image: images/stagemonitor-kibana-details.png
+- id: grafana-dashboards
+  name: Grafana Dashboards
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut beatae dolor dolores eaque
+    illum itaque magni necessitatibus, optio placeat quo repudiandae rerum ullam velit veritatis vero voluptatum.
+    Numquam, rem.
+  icon: fa-bar-chart-o
+  features:
+    - name: Request Dashboard
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut beatae dolor dolores eaque
+        illum itaque magni necessitatibus, optio placeat quo repudiandae rerum ullam velit veritatis vero voluptatum.
+        Numquam, rem.
+      image: images/dashboard-request.png
+    - name: JVM Dashboards
+      description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aut beatae dolor dolores eaque
+        illum itaque magni necessitatibus, optio placeat quo repudiandae rerum ullam velit veritatis vero voluptatum.
+        Numquam, rem.
+      image: images/dashboard-memory.png
