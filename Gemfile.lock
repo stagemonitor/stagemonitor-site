@@ -22,6 +22,7 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     erubis (2.7.0)
+    eventmachine (1.0.3)
     eventmachine (1.0.3-x86-mingw32)
     execjs (2.2.1)
     ffi (1.9.3-x86-mingw32)
@@ -31,6 +32,7 @@ GEM
     hike (1.2.3)
     hooks (0.4.0)
       uber (~> 0.0.4)
+    htmlcompressor (0.1.1)
     http_parser.rb (0.6.0)
     i18n (0.6.11)
     json (1.8.1)
@@ -67,6 +69,9 @@ GEM
       middleman-core (>= 3.0.2)
       multi_json (~> 1.0)
       rack-livereload
+    middleman-minify-html (3.4.0)
+      htmlcompressor (~> 0.1.0)
+      middleman-core (>= 3.2)
     middleman-sprockets (3.3.3)
       middleman-core (>= 3.2)
       sprockets (~> 2.2)
@@ -120,5 +125,6 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 3.3.3)
   middleman-livereload (~> 3.1.0)
+  middleman-minify-html
   tzinfo-data
   wdm (~> 0.1.0)
