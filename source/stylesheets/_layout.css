@@ -179,7 +179,7 @@ header .header-social li a:hover {
 }
 
 #logo {
-	padding-top: 5px;
+	padding-top: 10px;
 }
 
 #hero-content {
@@ -227,7 +227,8 @@ header .header-social li a:hover {
 
 .big-fa {
 	padding-right: 18px;
-	padding-top: 6px;
+	padding-top: 10px;
+	padding-left: 10px;
 	font-size: 72px;
 	line-height: 72px;
 	text-align: center;

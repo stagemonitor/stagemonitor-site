@@ -9,13 +9,15 @@
       description: Filter requests by queries or by selecting charts. You could use the query section to get details
         about requests that caused errors or where slow.
       image: images/stagemonitor-kibana-filter.png
+      image_title: Filter Requests
     - name: Detailed Request Traces
-      description: In this section, you can find out about the root cause of slow or failed requests by analyzing their
-        stack traces, request headers. It also includes information about the user's login name, ip, browser and
-        operating system. <br><br>
-        You can even analyze the method call tree including sql statements and parameters, which is collected by
-        stagemonitor's low overhead profiler.
+      description: In this section, you can find out about the root cause of slow or failed requests by analyzing
+        stack traces of exceptions, request headers and parameters. The request details also include information about
+        the user's login name, ip, browser and operating system. <br><br>
+        You can even analyze the method call tree including sql statements and parameters to identify what
+        caused a request to be slow. The method call tree is collected by stagemonitor's low overhead profiler.
       image: images/stagemonitor-kibana-details.png
+      image_title: Request Details
 - id: grafana-dashboards
   name: Grafana Dashboards
   description: The stagemonitor monitoring agent tightly integrates with the timeseries backend
@@ -36,18 +38,23 @@
         Requests are grouped by use cases. Usecases are automatically detected if you use Spring MVC. For other
         technologies, you can group URLs by regular expressions.
       image: images/dashboard-request.png
+      image_title: Request Dashboard
     - name: JVM Dashboards
       description: Get information about the heap utilisation, garbage collection behaviour and CPU utilisation.
       image: images/dashboard-memory.png
+      image_title: JVM Memory Dashboard
     - name: EhCache Metrics
       description: Information about the hit-rate, cache size (in bytes), get performance, throughput and expiries of
         all caches.
       image: images/dashboard-ehcache.png
+      image_title: EhCache Dashboard
     - name: Metrics about logging
       description: Statistics about the frequency of logs. Optionally append the request-id, application name, instance
         name and host name to each log statement to easily filter relevant logs.
       image: images/dashboard-logging.png
+      image_title: Logging Dashboard
     - name: Server Metrics
       description: Graphs that show the Server Thread Pool usage, the number of concurrent sessions, the load of your
-        hosts and the number of online servers. You can group these metrics by instance of host.
+        hosts and the number of online servers. You can group these metrics by instance or host.
       image: images/dashboard-server.png
+      image_title: Server Dashboard
