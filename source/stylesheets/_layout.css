@@ -231,13 +231,19 @@ header .header-social li a:hover {
 	color: #697B8B;
 	font-size: 17px;
 	padding-right: 5px;
+	text-align: justify;
 }
 
-.feature-overview p span {
-	font-family: sans-serif;
+.feature-overview a {
 	color: #A9B5C0;
 }
+.feature-overview a:hover {
+	color: #fff;
+}
 
+.features p {
+	font-size: 16px;
+}
 
 .item .item-wrap {
 	background: #fff;
@@ -412,7 +418,7 @@ footer .socialize .fa {
 /* Featurettes
 ------------------------- */
 .featurette-divider {
-	margin: 60px 0; /* Space out the Bootstrap <hr> more */
+	margin: 40px 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
