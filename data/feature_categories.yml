@@ -11,8 +11,9 @@
       image: images/stagemonitor-kibana-filter.png
     - name: Detailed Request Traces
       description: In this section, you can find out about the root cause of slow or failed requests by analyzing their
-        stack traces, request headers as well as information about the user's login name, ip, browser and operating system. <br>
-        You can even analyze the method call tree including sql statements and parameters, that is collected by
+        stack traces, request headers. It also includes information about the user's login name, ip, browser and
+        operating system. <br><br>
+        You can even analyze the method call tree including sql statements and parameters, which is collected by
         stagemonitor's low overhead profiler.
       image: images/stagemonitor-kibana-details.png
 - id: grafana-dashboards
@@ -44,10 +45,7 @@
       image: images/dashboard-ehcache.png
     - name: Metrics about logging
       description: Statistics about the frequency of logs. Optionally append the request-id, application name, instance
-        name and host name to each log statement to easily filter relevant logs.<br> Optinally, you can enable a aspect,
-        that appends the application name, instance name, host name and the request id to each log line. So that if you
-        are sending your logs to a central backend (e.g. with logstash elasticsearch and kibana), you can easily filter
-        relevant log stagements.
+        name and host name to each log statement to easily filter relevant logs.
       image: images/dashboard-logging.png
     - name: Server Metrics
       description: Graphs that show the Server Thread Pool usage, the number of concurrent sessions, the load of your
