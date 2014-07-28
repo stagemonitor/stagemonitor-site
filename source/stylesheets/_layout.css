@@ -32,6 +32,10 @@ ul {
 	margin: 0;
 }
 
+iframe {
+    border: none;
+}
+
 .section-head {
 	padding: 0 4%;
 	text-align: center;
