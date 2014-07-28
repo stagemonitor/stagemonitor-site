@@ -1,10 +1,16 @@
 #!/bin/sh
-rm -rf build
+if [ ! -d build/.git ];
+then
+	rm -rf build
+	rm -rf build
+	git clone git@github.com:stagemonitor/stagemonitor.github.io.git build
+else
+    pushd build
+    git pull
+    popd
+fi
 middleman build
 cd build
-git init
-git remote add origin git@github.com:stagemonitor/stagemonitor.github.io.git
 git add --all
 git commit -am 'deploy site'
-git push -f origin master
-rm -rf .git
+git push origin master

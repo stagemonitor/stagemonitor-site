@@ -62,6 +62,6 @@
     - name: DB Query Dashboard
       description: The DB Query dashboard gives you information about the statistical distribution of your SQL statement
         execution times and the number of queries executed per second. It also lets you easily identify the slowest and
-        most frequent SQL statements.
+        most frequent SQL statements as well as the requests that issue the most SQL statements.
       image: images/dashboard-db.png
-      image_title: DB Query Dashboard
+      image_title: DB Queries Dashboard
