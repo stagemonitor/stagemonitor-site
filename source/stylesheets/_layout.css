@@ -191,6 +191,12 @@ header .header-social li a:hover {
 	line-height: 4em;
 }
 
+
+#hero-content .img-responsive {
+	width:100%;
+	max-width: 598px;
+}
+
 .content {
 	background: #fff url(img/grey.png);
 	padding-top: 96px;
