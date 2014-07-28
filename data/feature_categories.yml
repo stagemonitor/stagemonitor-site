@@ -54,7 +54,14 @@
       image: images/dashboard-logging.png
       image_title: Logging Dashboard
     - name: Server Metrics
-      description: Graphs that show the Server Thread Pool usage, the number of concurrent sessions, the load of your
-        hosts and the number of online servers. You can group these metrics by instance or host.
+      description: In this dashboard, you can get information about the Server Thread Pool usage, the number of
+        concurrent sessions, the load of your hosts and the number of online servers. You can group these metrics by
+        instance or host.
       image: images/dashboard-server.png
       image_title: Server Dashboard
+    - name: DB Query Dashboard
+      description: The DB Query dashboard gives you information about the statistical distribution of your SQL statement
+        execution times and the number of queries executed per second. It also lets you easily identify the slowest and
+        most frequent SQL statements.
+      image: images/dashboard-db.png
+      image_title: DB Query Dashboard
