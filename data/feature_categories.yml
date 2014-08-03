@@ -28,7 +28,9 @@
     To support clustered environments, you can select the application, instance and host in each dashboard.
     If you don't select a instance and a host, you get aggregated metrics.<br><br>
     Stagemonitor includes the awesome <a href="http://metrics.codahale.com/">Metrics</a> library. You can use it to
-    track additional metrics - either programmatically or declaratively by adding annotations.
+    track additional metrics - either programmatically or declaratively by adding annotations.<br><br>
+    You want to know what the most common source of errors is or what the series of requests that lead to an error
+    looked like? This dashboard will give you the answers.
   icon: fa-bar-chart-o
   features:
     - name: Request Dashboard

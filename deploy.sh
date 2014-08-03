@@ -1,4 +1,5 @@
 #!/bin/sh
+git push
 if [ ! -d build/.git ];
 then
 	rm -rf build
