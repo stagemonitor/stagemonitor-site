@@ -1,3 +1,23 @@
+- id: in-browser-widget
+  name: In Browser Widget
+  description: Stagemonitor widget is a little stagemonitor icon, which is automatically injected in the monitored
+    webpage (if activated).
+    It offers to view the call tree of the request and notifies based on configurable thresholds, if the request was
+    too slow or too many SQL statements where executed. <br><br>
+    The widget supports the developer through instant feedback about poorly performing parts of the application.
+  icon: fa-tasks
+  features:
+    - name: Call Tree View
+      description: This tab displays the method call tree of the current request including SQL statements to identify
+        the bottlenecks of a request. The method call tree is collected by stagemonitor's low overhead profiler.
+      image: images/widget-call-tree.png
+      image_title: Call Tree View
+    - name: Request Trace
+      description: In this tab you can find detailed information about the request. This includes the total
+        execution time, the execution time and count of database interactions, as well as HTTP headers. You can also
+        find detailed information about the device, browser and operating system the request was issued from.
+      image: images/widget-request-trace.png
+      image_title: Request Trace
 - id: analyze-requests
   name: Analyze Requests
   description: Stagemonitor includes a <a href="http://www.elasticsearch.org/overview/kibana/">Kibana</a>
@@ -5,7 +25,7 @@
     parse any logs for that.<br><br>
     You want to know what the most common source of errors is, what the series of requests that lead to an error
     looked like or why a request was slow? This dashboard will give you the answers.
-  icon: fa-tachometer
+  icon: fa-bar-chart-o
   features:
     - name: Powerful querying and filtering capabilities
       description: Filter requests by queries or by selecting charts. You could use the query section to get details
@@ -31,7 +51,7 @@
     If you don't select a instance and a host, you get aggregated metrics.<br><br>
     Stagemonitor includes the awesome <a href="http://metrics.codahale.com/">Metrics</a> library. You can use it to
     track additional metrics - either programmatically or declaratively by adding annotations.
-  icon: fa-bar-chart-o
+  icon: fa-line-chart
   features:
     - name: Request Dashboard
       description: The request dashboard gives you information about the statistical distribution of your page response

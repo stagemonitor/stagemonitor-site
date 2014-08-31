@@ -29,7 +29,7 @@ title: stagemonitor
 		</div>
 		<div class="row bottom">
 			<p class="scrolldown">
-				<a class="btn btn-circle page-scroll smoothscroll" href="#analyze-requests">
+				<a class="btn btn-circle page-scroll smoothscroll" href="#features">
 					<i class="fa fa-angle-double-down"></i>
 				</a>
 			</p>
@@ -37,13 +37,14 @@ title: stagemonitor
 	</div>
 </section> <!-- Homepage Hero end -->
 
+<section id="features">
 <% data.feature_categories.each do |category| %>
 	<section id="<%= category.id %>" class="feature-overview">
 		<div class="container">
 
 			<div class="row">
 				<div class="col-lg-2">
-					<i class="fa <%= category.icon %> big-fa"></i>
+					<i class="fa <%= category.icon %> big-fa fa-5x"></i>
 				</div>
 				<div class="col-lg-9">
 					<h2><%= category.name %></h2>
@@ -80,6 +81,7 @@ title: stagemonitor
 		</div>
 	</section>
 <% end %>
+</section>
 
 <section id="team">
 	<div class="container">
