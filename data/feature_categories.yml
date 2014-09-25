@@ -13,10 +13,19 @@
       image: images/widget-call-tree.png
       image_title: Call Tree View
     - name: Request Trace
-      description: In this tab you can find detailed information about the request. This includes the total
-        execution time, the execution time and count of database interactions, as well as HTTP headers. You can also
-        find detailed information about the device, browser and operating system the request was issued from.
+      description: In this tab you can find detailed information about the request. This includes a breakdown of the
+        page load time into network, server processing, DOM processing and page rendering time.<br><br>
+        You can also see the execution time and count of database interactions.<br>
+        Furthermore you can analyze the HTTP headers and find information about the device, browser and operating
+        system the request was issued from.
       image: images/widget-request-trace.png
+      image_title: Request Trace
+    - name: Configuration Management done right
+      description: The stagemonitor widget includes a configuration tab in which you can reload an dynamically update
+        stagemonitor's configuration and view the available configuration sources.<br><br>
+        For each configuration option, you can view documentation, find out about the configuration source of the current
+        value, see validation errors and save a new value to a arbitrary configuration source.
+      image: images/widget-configuration.png
       image_title: Request Trace
 - id: analyze-requests
   name: Analyze Requests
@@ -56,9 +65,12 @@
     - name: Request Dashboard
       description: The request dashboard gives you information about the statistical distribution of your page response
         times, the througput and error rate. You can also easily identify the requests with the highest response time,
-        throughput and error rate.
+        throughput and error rate.<br><br>
         Requests are grouped by use cases. Usecases are automatically detected if you use Spring MVC. For other
-        technologies, you can group URLs by regular expressions.
+        technologies, you can group URLs by regular expressions.<br><br>
+        Since version 0.8, stagemonitor features Real User Monitoring (RUM). That means, that you can select to either
+        see the server time or total page load time in the request dashboard. Furthermore, you can find a breakdown of
+        the page load time into network, server processing, DOM processing and page rendering time.
       image: images/dashboard-request.png
       image_title: Request Dashboard
     - name: JVM Dashboards
