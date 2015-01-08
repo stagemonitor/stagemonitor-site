@@ -7,6 +7,11 @@
     The widget supports the developer through instant feedback about poorly performing parts of the application.
   icon: fa-tasks
   features:
+    - name: Metrics
+      description: The Metrics tab displays metrics collected by stagemonitor in tables and graphs. It is a lightweight
+        and easy to use alternative to the grafana dashboards as it does not require you to insall a database.
+      image: images/widget-metrics-tab.png
+      image_title: Widget Metrics Tab
     - name: Call Tree View
       description: This tab displays the method call tree of the current request including SQL statements to identify
         the bottlenecks of a request. The method call tree is collected by stagemonitor's low overhead profiler.
