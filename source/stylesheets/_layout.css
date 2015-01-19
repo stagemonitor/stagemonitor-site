@@ -264,6 +264,11 @@ header .header-social li a:hover {
 	font-size: 16px;
 }
 
+.feature-short-desc {
+        color: rgba(235, 238, 238, 0.75) !important;
+        font-style: italic;
+}
+
 .item .item-wrap {
 	background: #fff;
 	overflow: hidden;

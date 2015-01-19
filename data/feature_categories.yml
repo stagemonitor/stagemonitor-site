@@ -1,5 +1,6 @@
 - id: in-browser-widget
   name: In Browser Widget
+  short_description: No backend required - easy to set up - perfect fit for development
   description: Stagemonitor widget is a little stagemonitor icon, which is automatically injected in the monitored
     webpage (if activated).
     It offers to view the call tree of the request and notifies based on configurable thresholds, if the request was
@@ -56,6 +57,7 @@
       image_title: Request Details
 - id: grafana-dashboards
   name: Grafana Dashboards
+  short_description: metrics of your whole cluster - perfect fit for operations
   description: The stagemonitor monitoring agent tightly integrates with the timeseries backend
     <a href="http://graphite.readthedocs.org/en/latest/overview.html">Graphite</a> to store a
     long history of datapoints without overwhelming your disk and its dashboard extension

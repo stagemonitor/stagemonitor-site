@@ -48,6 +48,9 @@ title: stagemonitor
 				</div>
 				<div class="col-lg-9">
 					<h2><%= category.name %></h2>
+					<% unless category.short_description.nil? %>
+						<p class="feature-short-desc"><%= category.short_description %></p>
+					<% end %>
 					<p><%= category.description %></p>
 				</div>
 			</div>
