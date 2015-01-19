@@ -35,6 +35,7 @@
       image_title: Request Trace
 - id: analyze-requests
   name: Analyze Requests
+  short_description: analyze errors in production/web analytics
   description: Stagemonitor includes a <a href="http://www.elasticsearch.org/overview/kibana/">Kibana</a>
     dashboard that can be used to get detailed information about incoming requests. You don't need to set up logstash or
     parse any logs for that.<br><br>
