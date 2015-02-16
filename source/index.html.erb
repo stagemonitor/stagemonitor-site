@@ -8,7 +8,7 @@ title: stagemonitor
 	<div class="container" id="hero-body">
 		<div class="row">
 			<div class="row hidden-xs">
-				<a href="https://github.com/stagemonitor/stagemonitor" >
+				<a href="https://github.com/stagemonitor/stagemonitor">
 					<img style="position: absolute; top: 54px; right: 0; border: 0;"
 						 src="https://camo.githubusercontent.com/38ef81f8aca64bb9a64448d0d70f1308ef5341ab/68747470733a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67"
 						 alt="Fork me on GitHub" data-canonical-src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png">
@@ -19,11 +19,14 @@ title: stagemonitor
 			<div class="col-lg-12">
 				<div class="hero-text">
 					<img src="images/stagemonitor-logo-light-big.png" class="img-responsive center-block"/>
+
 					<p>an open source solution to application performance monitoring for java server applications</p>
 				</div>
 				<div class="buttons">
-					<a class="btn btn-success btn-lg" href="https://github.com/stagemonitor/stagemonitor">View on GitHub <i class="fa fa-github-alt"></i></a>
-					<a class="btn btn-primary btn-lg" href="https://github.com/stagemonitor/stagemonitor/wiki/Installation">Get Started</a>
+					<a class="btn btn-success btn-lg" href="https://github.com/stagemonitor/stagemonitor">View on GitHub
+						<i class="fa fa-github-alt"></i></a>
+					<a class="btn btn-primary btn-lg" href="https://github.com/stagemonitor/stagemonitor/wiki/Installation">Get
+						Started</a>
 				</div>
 			</div>
 		</div>
@@ -38,52 +41,62 @@ title: stagemonitor
 </section> <!-- Homepage Hero end -->
 
 <section id="features">
-<% data.feature_categories.each do |category| %>
-	<section id="<%= category.id %>" class="feature-overview">
-		<div class="container">
+	<% data.feature_categories.each do |category| %>
+		<section id="<%= category.id %>" class="feature-overview">
+			<div class="container">
 
-			<div class="row">
-				<div class="col-lg-2">
-					<i class="fa <%= category.icon %> big-fa fa-5x"></i>
-				</div>
-				<div class="col-lg-9">
-					<h2><%= category.name %></h2>
-					<% unless category.short_description.nil? %>
-						<p class="feature-short-desc"><%= category.short_description %></p>
-					<% end %>
-					<p><%= category.description %></p>
+				<div class="row">
+					<div class="col-lg-2">
+						<i class="fa <%= category.icon %> big-fa fa-5x"></i>
+					</div>
+					<div class="col-lg-8">
+						<h2><%= category.name %></h2>
+						<% unless category.short_description.nil? %>
+							<p class="feature-short-desc"><%= category.short_description %></p>
+						<% end %>
+						<p><%= category.description %></p>
+					</div>
+					<div class="col-lg-2">
+						<% unless category.live_demo_url.nil? %>
+							<a class="btn btn-lg btn-primary live-demo" target="_blank" href="<%= category.live_demo_url %>">Live
+								Demo</a>
+						<% end %>
+					</div>
 				</div>
 			</div>
-		</div>
-	</section>
-	<section class="features content">
-		<div class="container">
+		</section>
+		<section class="features content">
+			<div class="container">
 
-			<% category.features.each_with_index do |feature,index| %>
-				<div class="row featurette">
-					<div class="col-md-6<% if index.even? %> pull-right<% end %>">
-						<h3 class="featurette-heading"><%= feature.name %></h3>
-						<p><%= feature.description %></p>
-					</div>
+				<% category.features.each_with_index do |feature, index| %>
+					<div class="row featurette">
+						<div class="col-md-6 <% if index.even? %> pull-right<% end %>">
+							<h3 class="featurette-heading"><%= feature.name %></h3>
 
-					<div class="col-md-6">
-						<div class="columns item">
-							<div class="item-wrap">
-								<a href="<%= feature.image %>" class="img-responsive" data-imagelightbox="a">
-									<img src="<%= feature.image %>" alt="<%= feature.image_title %>">
-									<div class="overlay"></div>
-									<div class="link-icon"><i class="fa fa-plus"></i></div>
-								</a>
+							<p><%= feature.description %></p>
+						</div>
+
+						<div class="col-md-6">
+							<div class="columns item">
+								<div class="item-wrap">
+									<a href="<%= feature.image %>" class="img-responsive" data-imagelightbox="a">
+										<img src="<%= feature.image %>" alt="<%= feature.image_title %>">
+
+										<div class="overlay"></div>
+										<div class="link-icon"><i class="fa fa-plus"></i></div>
+									</a>
+								</div>
 							</div>
 						</div>
 					</div>
-				</div>
-				<% unless index == category.features.size - 1 %><hr class="featurette-divider"><% end %>
-			<% end %>
+					<% unless index == category.features.size - 1 %>
+						<hr class="featurette-divider">
+					<% end %>
+				<% end %>
 
-		</div>
-	</section>
-<% end %>
+			</div>
+		</section>
+	<% end %>
 </section>
 
 <section id="team">
@@ -136,7 +149,8 @@ title: stagemonitor
 
 		<div class="row">
 			<div class="col-lg-12 text-center">
-				<h3 class="section-subheading text-muted"><a href="https://github.com/stagemonitor/stagemonitor/fork">Join the team.</a></h3>
+				<h3 class="section-subheading text-muted">
+					<a href="https://github.com/stagemonitor/stagemonitor/fork">Join the team.</a></h3>
 			</div>
 		</div>
 

@@ -260,6 +260,11 @@ header .header-social li a:hover {
 	color: #fff;
 }
 
+.feature-overview .live-demo {
+	color: white;
+	margin-top: 1em;
+}
+
 .features p {
 	font-size: 16px;
 }
