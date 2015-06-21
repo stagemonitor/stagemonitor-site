@@ -17,4 +17,4 @@
     description: One instance of stagemonitor can monitor all your applications, instances and hosts.
   - icon: fa-refresh
     headline: Brings Devs and Ops together
-    description: Stagemonitor is designed to be used in development, qa and production.
+    description: Stagemonitor is designed to be used in development, QA and production.
