@@ -19,7 +19,8 @@ title: stagemonitor
 			<div class="col-lg-12">
 				<div class="hero-text">
 					<img src="images/stagemonitor-logo-light-big.png" class="img-responsive center-block"/>
-
+					<br>
+					<h2>All of your data are belonging to you</h2>
 					<p>an open source solution to application performance monitoring for java server applications</p>
 				</div>
 				<div class="buttons">
@@ -39,6 +40,25 @@ title: stagemonitor
 		</div>
 	</div>
 </section> <!-- Homepage Hero end -->
+<section id="overview" class="overview">
+	<div class="container">
+		<% data.overview_elements.each do |overview_element| %>
+			<div class="row">
+				<% overview_element.items.each do |item| %>
+					<div class="col-md-4">
+						<div class="col-md-3">
+							<i class="fa <%= item.icon %> big-fa fa-5x"></i>
+						</div>
+						<div class="col-md-9">
+							<h2><%= item.headline %></h2>
+							<p><%= item.description %></p>
+						</div>
+					</div>
+				<% end %>
+			</div>
+		<% end %>
+	</div>
+</section>
 
 <section id="features">
 	<% data.feature_categories.each do |category| %>

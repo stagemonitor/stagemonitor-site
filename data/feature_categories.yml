@@ -58,7 +58,7 @@
       image: images/stagemonitor-kibana-details.png
       image_title: Request Details
 - id: grafana-dashboards
-  name: Grafana Dashboards
+  name: Cluster Monitoring
   short_description: metrics of your whole cluster - perfect fit for operations
   description: The stagemonitor monitoring agent tightly integrates with the timeseries backend
     <a href="http://graphite.readthedocs.org/en/latest/overview.html">Graphite</a> to store a

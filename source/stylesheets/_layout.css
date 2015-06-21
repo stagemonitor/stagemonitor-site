@@ -203,6 +203,36 @@ header .header-social li a:hover {
 }
 
 /* ------------------------------------------------------------------ */
+/* overview
+/* ------------------------------------------------------------------ */
+
+#overview {
+	padding-top: 4em;
+	padding-bottom: 2em;
+}
+
+.overview h2 {
+	font: 24px/24px 'Raleway', sans-serif;
+	letter-spacing: 3px;
+	color: #fff;
+}
+
+.overview p {
+	color: #c9c9c9;
+	font-size: 1.1em;
+	padding-right: 5px;
+	text-align: justify;
+}
+
+#overview .col-md-4 {
+	padding: 1em;
+}
+
+#overview .big-fa {
+	padding-right: 0;
+}
+
+/* ------------------------------------------------------------------ */
 /* feature overview
 /* ------------------------------------------------------------------ */
 
