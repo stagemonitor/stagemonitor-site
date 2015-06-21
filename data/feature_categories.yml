@@ -4,7 +4,7 @@
   description: Stagemonitor widget is a little stagemonitor icon, which is automatically injected in the monitored
     webpage (if activated).
     It offers to view the call tree of the request and notifies based on configurable thresholds, if the request was
-    too slow or too many SQL statements where executed. <br><br>
+    too slow or too many SQL statements were executed. <br><br>
     The widget supports the developer through instant feedback about poorly performing parts of the application.
   icon: fa-tasks
   live_demo_url: http://stagemonitor-demo.isys-software.de/

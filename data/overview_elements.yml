@@ -1,6 +1,6 @@
 - items:
   - icon: fa-user-secret
-    headline: Turn on prive mode for your data
+    headline: Turn on private mode for your data
     description: You can deploy stagemonitor on your own datacenter. Nothing will ever be sent to the outside world.
   - icon: fa-server
     headline: Production ready
