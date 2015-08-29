@@ -7,7 +7,7 @@
     too slow or too many SQL statements were executed. <br><br>
     The widget supports the developer through instant feedback about poorly performing parts of the application.
   icon: fa-tasks
-  live_demo_url: http://stagemonitor-demo.isys-software.de/
+  #live_demo_url: http://stagemonitor-demo.isys-software.de/
   features:
     - name: Metrics
       description: The Metrics tab displays metrics collected by stagemonitor in tables and graphs. It is a lightweight
