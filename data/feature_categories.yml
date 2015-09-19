@@ -11,7 +11,7 @@
   features:
     - name: Metrics
       description: The Metrics tab displays metrics collected by stagemonitor in tables and graphs. It is a lightweight
-        and easy to use alternative to the grafana dashboards as it does not require you to insall a database.
+        and easy to use alternative to the grafana dashboards as it does not require you to install a database.
       image: images/widget-metrics-tab.png
       image_title: Widget Metrics Tab
     - name: Call Tree View
