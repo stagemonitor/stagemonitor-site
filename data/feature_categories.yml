@@ -43,6 +43,7 @@
     You want to know what the most common source of errors is, what the series of requests that lead to an error
     looked like or why a request was slow? This dashboard will give you the answers.
   icon: fa-bar-chart-o
+  info_url: https://github.com/stagemonitor/stagemonitor/wiki/Request-Analysis-Dashboard
   features:
     - name: Powerful querying and filtering capabilities
       description: Filter requests by queries or by selecting charts. You could use the query section to get details
@@ -70,6 +71,7 @@
     Stagemonitor includes the awesome <a href="http://metrics.codahale.com/">Metrics</a> library. You can use it to
     track additional metrics - either programmatically or declaratively by adding annotations.
   icon: fa-line-chart
+  info_url: https://github.com/stagemonitor/stagemonitor/wiki/Dashboards
   features:
     - name: Request Dashboard
       description: The request dashboard gives you information about the statistical distribution of your page response

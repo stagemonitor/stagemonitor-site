@@ -81,6 +81,10 @@ title: stagemonitor
 							<a class="btn btn-lg btn-primary live-demo" target="_blank" href="<%= category.live_demo_url %>">Live
 								Demo</a>
 						<% end %>
+                        
+						<% unless category.info_url.nil? %>
+							<a class="btn btn-lg btn-primary live-demo" target="_blank" href="<%= category.info_url %>">More Info</a>
+						<% end %>
 					</div>
 				</div>
 			</div>
@@ -119,7 +123,7 @@ title: stagemonitor
 	<% end %>
 </section>
 
-<section id="team">
+<section id="team" style="display: none">
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12 text-center">
