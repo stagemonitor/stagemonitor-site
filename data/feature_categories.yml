@@ -61,15 +61,14 @@
 - id: grafana-dashboards
   name: Cluster Monitoring
   short_description: metrics of your whole cluster - perfect fit for operations
-  description: The stagemonitor monitoring agent tightly integrates with the timeseries backend
-    <a href="http://graphite.readthedocs.org/en/latest/overview.html">Graphite</a> to store a
-    long history of datapoints without overwhelming your disk and its dashboard extension
-    <a href="http://grafana.org/">Grafana</a> to analyze graphed metrics.
-    Stagemonitor includes preconfigured Grafana dashboards that can be customized. <br><br>
+  description: The stagemonitor monitoring agent tightly integrates with time series databases like Elasticsearch, 
+    Graphite and InfluxDB to store a long history of datapoints.
+    Stagemonitor includes preconfigured Grafana dashboards that can be fully customized. <br><br>
     To support clustered environments, you can select the application, instance and host in each dashboard.
     If you don't select a instance and a host, you get aggregated metrics.<br><br>
     Stagemonitor includes the awesome <a href="http://metrics.codahale.com/">Metrics</a> library. You can use it to
-    track additional metrics - either programmatically or declaratively by adding annotations.
+    <a href="https://github.com/stagemonitor/stagemonitor/wiki/Track-your-own-metrics">track additional metrics</a> - 
+    either programmatically or declaratively by adding annotations.
   icon: fa-line-chart
   info_url: https://github.com/stagemonitor/stagemonitor/wiki/Dashboards
   features:
