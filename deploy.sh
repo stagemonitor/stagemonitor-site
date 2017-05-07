@@ -10,7 +10,7 @@ else
     git pull
     popd
 fi
-middleman build
+bundle exec middleman build
 cd build
 git add --all
 git commit -am 'deploy site'
