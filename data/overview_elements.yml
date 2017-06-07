@@ -13,8 +13,9 @@
     headline: Alerting
     description: Define thresholds for your metrics. Manage subscriptions and alerting channels.
   - icon: fa-sitemap
-    headline: Centralized Monitoring
-    description: One instance of stagemonitor can monitor all your applications, instances and hosts.
+    headline: Distributed Tracing
+    description: Stagemonitor uses the <a href="http://opentracing.io/" target="_blank">Open Tracing</a> API in order to correlate requests in a distributed system.
+    detail_link: https://github.com/stagemonitor/stagemonitor-mailinglist/issues/46
   - icon: fa-refresh
     headline: Brings Devs and Ops together
     description: Stagemonitor is designed to be used in development, QA and production.

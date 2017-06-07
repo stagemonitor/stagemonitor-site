@@ -47,10 +47,18 @@ title: stagemonitor
 				<% overview_element.items.each do |item| %>
 					<div class="col-md-4">
 						<div class="col-md-3">
-							<i class="fa <%= item.icon %> big-fa fa-5x"></i>
+						<% if item.detail_link? %>
+							<a href="<%= item.detail_link %>" target="_blank"><i class="fa <%= item.icon %> big-fa fa-5x"></i></a>
+						<% else %>
+								<i class="fa <%= item.icon %> big-fa fa-5x"></i>
+						<% end %>
 						</div>
 						<div class="col-md-9">
-							<h2><%= item.headline %></h2>
+						<% if item.detail_link? %>
+							<a href="<%= item.detail_link %>" target="_blank"><h2><%= item.headline %></h2></a>
+						<% else %>
+								<h2><%= item.headline %></h2>
+						<% end %>
 							<p><%= item.description %></p>
 						</div>
 					</div>
