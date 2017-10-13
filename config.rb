@@ -40,6 +40,9 @@ configure :development do
 #  activate :livereload
 end
 
+# Activates localization for language support
+activate :i18n, :langs => [:en, :de], :mount_at_root => :en
+
 # Methods defined in the helpers block are available in templates
 # helpers do
 #   def some_helper

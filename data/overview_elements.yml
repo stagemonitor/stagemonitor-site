@@ -1,21 +1,21 @@
 - items:
   - icon: fa-user-secret
-    headline: Turn on private mode for your data
-    description: You can deploy stagemonitor on your own datacenter. Nothing will ever be sent to the outside world.
+    secret-headline: :secret-headline
+    secret-description: :secret-description
   - icon: fa-server
-    headline: Production ready
-    description: Stagemonitor is successfully used in production and imposes a very low overhead.
+    server-headline: :server-headline
+    server-description: :server-description
   - icon: fa-puzzle-piece
-    headline: Extendable
-    description: Write your own plugins, use 3rd party plugins, track your own metrics and create or customize dashboards.
+    puzzle-piece-headline: :puzzle-piece-headline
+    puzzle-piece-description: :puzzle-piece-description
 - items:
   - icon: fa-bell-o
-    headline: Alerting
-    description: Define thresholds for your metrics. Manage subscriptions and alerting channels.
+    bell-o-headline: :bell-o-headline
+    bell-o-description: :bell-o-description
   - icon: fa-sitemap
-    headline: Distributed Tracing
-    description: Stagemonitor uses the <a href="http://opentracing.io/" target="_blank">Open Tracing</a> API in order to correlate requests in a distributed system.
-    detail_link: https://github.com/stagemonitor/stagemonitor-mailinglist/issues/46
+    sitemap-headline: :sitemap-headline
+    sitemap-description: :sitemap-description
+    sitemap-detail_link: https://github.com/stagemonitor/stagemonitor-mailinglist/issues/46
   - icon: fa-refresh
-    headline: Brings Devs and Ops together
-    description: Stagemonitor is designed to be used in development, QA and production.
+    refresh-headline: :refresh-headline
+    refresh-description: :refresh-description

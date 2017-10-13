@@ -1,111 +1,76 @@
 - id: in-browser-widget
-  name: In Browser Widget
-  short_description: No backend required - easy to set up - perfect fit for development
-  description: Stagemonitor widget is a little stagemonitor icon, which is automatically injected in the monitored
-    webpage (if activated).
-    It offers to view the call tree of the request and notifies based on configurable thresholds, if the request was
-    too slow or too many SQL statements were executed. <br><br>
-    The widget supports the developer through instant feedback about poorly performing parts of the application.
+  in-browser-widget-name: :in-browser-widget-name
+  in-browser-widget-short_description: :in-browser-widget-short_description
+  in-browser-widget-description: :in-browser-widget-description
   icon: fa-tasks
   live_demo_url: http://stagemonitor-demo.isys-software.de/
   features:
-    - name: Metrics
-      description: The Metrics tab displays metrics collected by stagemonitor in tables and graphs. It is a lightweight
-        and easy to use alternative to the grafana dashboards as it does not require you to install a database.
+    - id: metrics
+      metrics-name: :metrics-name
+      metrics-description: :metrics-description
       image: images/widget-metrics-tab.png
-      image_title: Widget Metrics Tab
-    - name: Call Tree View
-      description: This tab displays the method call tree of the current request including SQL statements to identify
-        the bottlenecks of a request. The method call tree is collected by stagemonitor's low overhead profiler.
+      metrics-image_title: :metrics-image_title
+    - id: call_tree_view
+      call_tree_view-name: :call_tree_view-name
+      call_tree_view-description: :call_tree_view-description
       image: images/widget-call-tree.png
-      image_title: Call Tree View
-    - name: Request Trace
-      description: In this tab you can find detailed information about the request. This includes a breakdown of the
-        page load time into network, server processing, DOM processing and page rendering time.<br><br>
-        You can also see the execution time and count of database interactions.<br>
-        Furthermore you can analyze the HTTP headers and find information about the device, browser and operating
-        system the request was issued from.
+      call_tree_view-image_title: :call_tree_view-image_title
+    - id: request_trace
+      request_trace-name: :request_trace-name
+      request_trace-description: :request_trace-description
       image: images/widget-request-trace.png
-      image_title: Request Trace
-    - name: Configuration Management done right
-      description: The stagemonitor widget includes a configuration tab in which you can reload an dynamically update
-        stagemonitor's configuration and view the available configuration sources.<br><br>
-        For each configuration option, you can view documentation, find out about the configuration source of the current
-        value, see validation errors and save a new value to a arbitrary configuration source.
+      request_trace-image_title: :request_trace-image_title
+    - id: configuration_mgmt
+      configuration_mgmt-name: :configuration_mgmt-name
+      configuration_mgmt-description: :configuration_mgmt-description
       image: images/widget-configuration.png
-      image_title: Request Trace
+      configuration_mgmt-image_title: :configuration_mgmt-image_title
+
 - id: analyze-requests
-  name: Analyze Requests
-  short_description: analyze errors in production/web analytics
-  description: Stagemonitor includes a <a href="http://www.elasticsearch.org/overview/kibana/">Kibana</a>
-    dashboard that can be used to get detailed information about incoming requests. You don't need to set up logstash or
-    parse any logs for that.<br><br>
-    You want to know what the most common source of errors is, what the series of requests that lead to an error
-    looked like or why a request was slow? This dashboard will give you the answers.
+  analyze-requests-name: :analyze-requests-name
+  analyze-requests-short_description: :analyze-requests-short_description
+  analyze-requests-description: :analyze-requests-short_description
   icon: fa-bar-chart-o
   info_url: https://github.com/stagemonitor/stagemonitor/wiki/Request-Analysis-Dashboard
   features:
-    - name: Powerful querying and filtering capabilities
-      description: Filter requests by queries or by selecting charts. You could use the query section to get details
-        about requests that caused errors or were slow.
+    - id: powerful_q_f
+      powerful_q_f-name: :powerful_q_f-name
+      powerful_q_f-description: :powerful_q_f-description
       image: images/stagemonitor-kibana-filter.png
-      image_title: Filter Requests
-    - name: Detailed Request Traces
-      description: In this section, you can find out about the root cause of slow or failed requests by analyzing
-        stack traces of exceptions, request headers and parameters. The request details also include information about
-        the user's login name, ip, browser and operating system. <br><br>
-        You can even analyze the method call tree including sql statements and parameters to identify what
-        caused a request to be slow. The method call tree is collected by stagemonitor's low overhead profiler.
+      powerful_q_f-image_title: :powerful_q_f-image_title
+    - id: detailed_traces
+      detailed_traces-name: :detailed_traces-name
+      detailed_traces-description: :detailed_traces-description
       image: images/stagemonitor-kibana-details.png
-      image_title: Request Details
+      detailed_traces-image_title: :detailed_traces-image_title
+
+
+
+
 - id: grafana-dashboards
-  name: Cluster Monitoring
-  short_description: metrics of your whole cluster - perfect fit for operations
-  description: The stagemonitor monitoring agent tightly integrates with time series databases like Elasticsearch, 
-    Graphite and InfluxDB to store a long history of datapoints.
-    Stagemonitor includes preconfigured Grafana dashboards that can be fully customized. <br><br>
-    To support clustered environments, you can select the application, instance and host in each dashboard.
-    If you don't select a instance and a host, you get aggregated metrics.<br><br>
-    Stagemonitor includes the awesome <a href="http://metrics.codahale.com/">Metrics</a> library. You can use it to
-    <a href="https://github.com/stagemonitor/stagemonitor/wiki/Track-your-own-metrics">track additional metrics</a> - 
-    either programmatically or declaratively by adding annotations.
+  grafana-dashboards-name: :grafana-dashboards-name
+  grafana-dashboards-short_description: :grafana-dashboards-short_description
+  grafana-dashboards-description: :grafana-dashboards-description
   icon: fa-line-chart
   info_url: https://github.com/stagemonitor/stagemonitor/wiki/Dashboards
   features:
-    - name: Request Dashboard
-      description: The request dashboard gives you information about the statistical distribution of your page response
-        times, the througput and error rate. You can also easily identify the requests with the highest response time,
-        throughput and error rate.<br><br>
-        Requests are grouped by use cases. Usecases are automatically detected if you use Spring MVC. For other
-        technologies, you can group URLs by regular expressions.<br><br>
-        Since version 0.8, stagemonitor features Real User Monitoring (RUM). That means, that you can select to either
-        see the server time or total page load time in the request dashboard. Furthermore, you can find a breakdown of
-        the page load time into network, server processing, DOM processing and page rendering time.
+    - id: request_db
+      request_db-name: :request_db-name
+      request_db-description: :request_db-description
       image: images/dashboard-request.png
-      image_title: Request Dashboard
-    - name: JVM Dashboards
-      description: Get information about the heap utilisation, garbage collection behaviour and CPU utilisation.
+      request_db-image_title: :request_db-image_title
+    - id: jvm_db
+      jvm_db-name: :jvm_db-name
+      jvm_db-description: :jvm_db-description
       image: images/dashboard-memory.png
-      image_title: JVM Memory Dashboard
-    - name: EhCache Metrics
-      description: Information about the hit-rate, cache size (in bytes), get performance, throughput and expiries of
-        all caches.
+      jvm_db-image_title: :jvm_db-image_title
+    - id: ehCache
+      ehCache-name: :ehCache-name
+      ehCache-description: :ehCache-description
       image: images/dashboard-ehcache.png
-      image_title: EhCache Dashboard
-    - name: Metrics about logging
-      description: Statistics about the frequency of logs. Optionally append the request-id, application name, instance
-        name and host name to each log statement to easily filter relevant logs.
-      image: images/dashboard-logging.png
-      image_title: Logging Dashboard
-    - name: Server Metrics
-      description: In this dashboard, you can get information about the Server Thread Pool usage, the number of
-        concurrent sessions, the load of your hosts and the number of online servers. You can group these metrics by
-        instance or host.
+      ehCache-image_title: :ehCache-image_title
+    - id: server_metrics
+      server_metrics-name: :server_metrics-name
+      server_metrics-description: :server_metrics-description
       image: images/dashboard-server.png
-      image_title: Server Dashboard
-    - name: DB Query Dashboard
-      description: The DB Query dashboard gives you information about the statistical distribution of your SQL statement
-        execution times and the number of queries executed per second. It also lets you easily identify the slowest and
-        most frequent SQL statements as well as the requests that issue the most SQL statements.
-      image: images/dashboard-db.png
-      image_title: DB Queries Dashboard
+      server_metrics-image_title: :server_metrics-image_title

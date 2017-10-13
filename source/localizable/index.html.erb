@@ -18,16 +18,15 @@ title: stagemonitor
 		<div id="hero-content" class="row">
 			<div class="col-lg-12">
 				<div class="hero-text">
-					<img src="images/stagemonitor-logo-light-big.png" class="img-responsive center-block"/>
+					<img src="../images/stagemonitor-logo-light-big.png" class="img-responsive center-block"/>
 					<br>
-					<h2>make your application perform like a star</h2>
-					<p>an open source solution to application performance monitoring for java server applications</p>
+					<h2><%= I18n.t(:"stagemonitor-slogan") %></h2>
+					<p><%= I18n.t(:"stagemonitor-description") %></p>
 				</div>
 				<div class="buttons">
-					<a class="btn btn-success btn-lg" href="https://github.com/stagemonitor/stagemonitor">View on GitHub
+					<a class="btn btn-success btn-lg" href="https://github.com/stagemonitor/stagemonitor"><%= I18n.t(:"button-github") %>
 						<i class="fa fa-github-alt"></i></a>
-					<a class="btn btn-primary btn-lg" href="https://github.com/stagemonitor/stagemonitor/wiki/Installation">Get
-						Started</a>
+					<a class="btn btn-primary btn-lg" href="https://github.com/stagemonitor/stagemonitor/wiki/Installation"><%= I18n.t(:"button-get-started") %></a>
 				</div>
 			</div>
 		</div>
@@ -55,11 +54,11 @@ title: stagemonitor
 						</div>
 						<div class="col-md-9">
 						<% if item.detail_link? %>
-							<a href="<%= item.detail_link %>" target="_blank"><h2><%= item.headline %></h2></a>
+							<a href="<%= item.detail_link %>" target="_blank"><h2><%= I18n.t(:"#{item.icon}-headline") %></h2></a>
 						<% else %>
-								<h2><%= item.headline %></h2>
+								<h2><%= I18n.t(:"#{item.icon}-headline") %></h2>
 						<% end %>
-							<p><%= item.description %></p>
+							<p><%= I18n.t(:"#{item.icon}-description") %></p>
 						</div>
 					</div>
 				<% end %>
@@ -78,11 +77,11 @@ title: stagemonitor
 						<i class="fa <%= category.icon %> big-fa fa-5x"></i>
 					</div>
 					<div class="col-lg-8">
-						<h2><%= category.name %></h2>
-						<% unless category.short_description.nil? %>
-							<p class="feature-short-desc"><%= category.short_description %></p>
+						<h2><%= I18n.t(:"#{category.id}-name") %></h2>
+						<% unless I18n.t(:"#{category.id}-short_description").nil? %>
+							<p class="feature-short-desc"><%= I18n.t(:"#{category.id}-short_description") %></p>
 						<% end %>
-						<p><%= category.description %></p>
+						<p><%= I18n.t(:"#{category.id}-description") %></p>
 					</div>
 					<div class="col-lg-2">
 						<% unless category.live_demo_url.nil? %>
@@ -91,7 +90,7 @@ title: stagemonitor
 						<% end %>
                         
 						<% unless category.info_url.nil? %>
-							<a class="btn btn-lg btn-primary live-demo" target="_blank" href="<%= category.info_url %>">More Info</a>
+							<a class="btn btn-lg btn-primary live-demo" target="_blank" href="<%= category.info_url %>"><%= I18n.t(:"button-more-info") %></a>
 						<% end %>
 					</div>
 				</div>
@@ -103,16 +102,16 @@ title: stagemonitor
 				<% category.features.each_with_index do |feature, index| %>
 					<div class="row featurette">
 						<div class="col-md-6 <% if index.even? %> pull-right<% end %>">
-							<h3 class="featurette-heading"><%= feature.name %></h3>
+							<h3 class="featurette-heading"><%= I18n.t(:"#{feature.id}-name") %></h3>
 
-							<p><%= feature.description %></p>
+							<p><%= I18n.t(:"#{feature.id}-description") %></p>
 						</div>
 
 						<div class="col-md-6">
 							<div class="columns item">
 								<div class="item-wrap">
 									<a href="<%= feature.image %>" class="img-responsive" data-imagelightbox="a">
-										<img src="<%= feature.image %>" alt="<%= feature.image_title %>">
+										<img src="<%= feature.image %>" alt="<%= I18n.t(:"#{feature.id}-image_title") %>">
 
 										<div class="overlay"></div>
 										<div class="link-icon"><i class="fa fa-plus"></i></div>
@@ -144,7 +143,7 @@ title: stagemonitor
 			</div>
 			<div class="col-sm-3">
 				<div class="team-member">
-					<img src="images/felix.jpg" class="img-responsive img-circle" alt="">
+					<img src="../images/felix.jpg" class="img-responsive img-circle" alt="">
 					<h4>Felix Barnsteiner</h4>
 
 					<p class="text-muted">Project Lead</p>
@@ -160,7 +159,7 @@ title: stagemonitor
 			</div>
 			<div class="col-sm-3">
 				<div class="team-member">
-					<img src="images/Trampusch.jpg" class="img-responsive img-circle" alt="">
+					<img src="../images/Trampusch.jpg" class="img-responsive img-circle" alt="">
 					<h4>Fabian Trampusch</h4>
 
 					<p class="text-muted">Developer</p>
