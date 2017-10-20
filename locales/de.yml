@@ -3,7 +3,7 @@ de:
     section-documentation: Dokumentation
 
     stagemonitor-slogan: make your application perform like a star
-    stagemonitor-description: eine OpenSource-Lösung für die Performance-Überwachung von Java Server Appliationen
+    stagemonitor-description: eine OpenSource-Lösung für die Performance-Überwachung von Java Server Applikationen
 
     button-github: GitHub
     button-get-started: Anleitung
@@ -23,10 +23,10 @@ de:
     fa-puzzle-piece-description: Schreiben Sie eigene Erweiterungen, verwenden Sie Erweiterungen von Dritten, definieren Sie eigene Metriken und erstellen Sie Dashboards nach Ihren eigenen Anforderungen.
 
     fa-bell-o-headline: Alerting
-    fa-bell-o-description: Legen Sie für Ihre Metriken eigene Schwellwerte fest. Verwalten Sie Subscriptions und Alerting-Channels.
+    fa-bell-o-description: Legen Sie für Ihre Metriken eigene Schwellwerte fest. Verwalten Sie Benachrichtigungen und Alerting-Channels.
 
     fa-sitemap-headline: Tracing für Verteilte Systeme
-    fa-sitemap-description: Stagemonitor verwendet die <a href="http://opentracing.io/" target="_blank">Open Tracing</a> API um Requests über Verteilte Systeme hinweg zu verfolgen.
+    fa-sitemap-description: Stagemonitor verwendet die <a href="http://opentracing.io/" target="_blank">Open Tracing</a> API um Anfragen über Verteilte Systeme hinweg zu verfolgen.
 
     fa-refresh-headline: Verbindet Dev & Ops
     fa-refresh-description: Stagemonitor wurde für den Einsatz in Entwicklung, Qualitätssicherung sowie Produktion entwickelt.
@@ -35,8 +35,8 @@ de:
     in-browser-widget-name: Browser Widget
     in-browser-widget-short_description: Optionale Backend-Anbindung - einfach aufzusetzen
         <br>Das optimale Werkzeug während der Entwicklung.
-    in-browser-widget-description: Das Widget ist ein kleines stagemonitor-Icon, das automatisch in die zu überwachende Webseite eingebunden wird (falls aktiviert).
-        Mittels konfigurierbaren Schwellwerten erhalten Sie eine sofortige Rückmeldung sobald ein Request zu langsam war oder zuviele SQL-Anfragen abgesetzt worden sind.
+    in-browser-widget-description: Das Widget ist ein kleines stagemonitor-Icon, das automatisch zur Entwicklungszeit in die zu überwachende Webseite eingebunden werden kann.
+        Mittels konfigurierbaren Schwellwerten erhalten Sie eine sofortige Rückmeldung sobald eine Anfrage zu langsam war oder zuviele SQL-Anfragen abgesetzt worden sind.
         Des Weiteren existiert eine übersichtliche Ansicht der Methoden die während einer Anfrage aufgerufen wurden.
         <br><br>
         Durch unmittelbares Feedback wird der Entwickler sofort über inperformante Teile der Anwendung informiert und kann der Ursache unmittelbar auf den Grund gehen.
@@ -46,13 +46,13 @@ de:
     metrics-image_title: Widget Metriken-Tab
 
     call_tree_view-name: Call-Tree-Ansicht
-    call_tree_view-description: Dieser Tab zeigt den Call-Tree des aktuellen Requests, inklusive der SQL-Statements an. So können die Bottlenecks Ihrer Anwendung schnellstmöglich identifiziert werden.<br><br>
+    call_tree_view-description: Dieser Tab zeigt den Call-Tree der aktuellen Anfrage, inklusive der SQL-Statements an. So können die Bottlenecks Ihrer Anwendung schnellstmöglich identifiziert werden.<br><br>
       Die während einer Anfrage aufgerufenen Methoden werden dabei vom stagemonitor-Profiler erfasst, ohne Ihre Anwendung zu verlangsamen.
     call_tree_view-image_title: Call-Tree-Ansicht
 
     request_trace-name: Request-Ansicht
-    request_trace-description: In diesem Tab finden Sie detaillierte Informationen über den aktuellen Request.<br><br>
-      Hier werden unter Anderem die Ausführungszeit sowie die Anzahl der Datenbankinteraktionen dargestellt. <br>
+    request_trace-description: In diesem Tab finden Sie detaillierte Informationen über die aktuelle Anfrage.<br><br>
+      Hier werden unter anderem die Ausführungszeit sowie die Anzahl der Datenbankinteraktionen dargestellt. <br>
       Zusätzlich können die HTTP-Header sowie Informationen über das verwendete Endgerät, den Browser sowie das Betriebssystem des Clients eingesehen werden.
     request_trace-image_title: Request Trace
 
@@ -69,28 +69,28 @@ de:
 
     analyze-requests-name: Request-Analyse
     analyze-requests-short_description: Analysieren Sie Fehler in der Produktionsumgebung/Web-Analytics
-    analyze-requests-description: Stagemonitor beinhaltet ein <a href="http://www.elasticsearch.org/overview/kibana/">Kibana</a>-Dashboard
-      das genutzt werden kann um detaillierte Informationen über verarbeitete Requests zu erhalten. Dafür müssen weder Logdateien eingelesen, noch Logstash aufgesetzt werden.
+    analyze-requests-description: Stagemonitor beinhaltet ein <a href="http://www.elasticsearch.org/overview/kibana/">Kibana</a>-Dashboard,
+      das genutzt werden kann, um detaillierte Informationen über verarbeitete Anfragen zu erhalten. Dafür müssen weder Logdateien eingelesen, noch Logstash aufgesetzt werden.
       <br><br>
-      Sie wollen wissen was die häufigste Quelle von Fehlern ist, welche Arten von Requests zu Fehlern führen oder warum ein Request so langsam war?
+      Sie wollen wissen, was die häufigste Quelle von Fehlern ist, welche Arten von Anfragen zu Fehlern führen oder warum eine Anfrage so langsam war?
       Dieses Dashboard versorgt Sie mit den Antworten die Sie benötigen.
 
     powerful_q_f-name: Leistungsstarke Abfrage- und Filterfähigkeiten
-    powerful_q_f-description: Filtern Sie Requests mittels Abfragen oder per Auswahl von Diagrammen. Sie können die Abfragefunktion nutzen um Details von Requests einzusehen die Fehler verursacht haben oder langsam waren.
+    powerful_q_f-description: Filtern Sie Requests mittels Abfragen oder per Auswahl von Diagrammen. Sie können die Abfragefunktion nutzen um Details von Anfragen einzusehen die Fehler verursacht haben oder langsam waren.
     powerful_q_f-image_title: Filter Requests
 
     detailed_traces-name: Detaillierte Request-Traces
     detailed_traces-description: In diesem Abschnitt können Sie den Gründen für fehlerhafte oder langsame Anfragen nachgehen, indem Sie die Stack-Traces von Exceptions, Request-Header und -Parameter analysiseren.
       Die Details umfassen unter anderem den Login-Namen des Nutzers, seine IP-Adresse und sein Betriebssystem.<br><br>
-      Sie können ebenfalls den Methoden Call-Tree inklusive der SQL-Statements sowie der Parameter einsehen um nachzuvollziehen was genau einen Request verlangsamt hat.
+      Sie können ebenfalls den Methoden Call-Tree inklusive der SQL-Statements sowie der Parameter einsehen um nachzuvollziehen, was genau eine Anfrage verlangsamt hat.
       Der stagemonitor-Profiler konstruiert den Methoden Call-Tree ohne großen Overhead.
     detailed_traces-image_title: Request Details
 
     grafana-dashboards-name: Cluster Monitoring
-    grafana-dashboards-short_description: Metriken Ihres gesamten Clusters - perfekt für Operations
+    grafana-dashboards-short_description: Metriken Ihres gesamten Clusters - perfekt für den Produktivbetrieb
     grafana-dashboards-description: Der Monitoring-Agent lässt sich nahtlos mit Zeitreihen-Datenbanken wie Elasticsearch,
       Graphite oder InfluxDB integrieren, um eine lange Historie von Datenpunkten abspeichern zu können.
-      Stagemonitor beinhaltet vorkonfigurierte Grafana-Dashboards die vollständig angepasst werden können. <br><br>
+      Stagemonitor beinhaltet vorkonfigurierte Grafana-Dashboards, die vollständig angepasst werden können. <br><br>
       Um einen verbesserten Überblick über Systemlandschaften hinweg zu ermöglichen, lassen sich sowohl einzelne wie auch aggregierte Daten des Gesamtsystems visualisieren. Hierzu gibt es Filteroptionen für die Anwendung, die Instanz und den Host.
       Wird keine Auswahl getroffen, erhalten Sie automatisch aggregierte Metriken des gesamten Systems.
       <br><br>
@@ -101,9 +101,9 @@ de:
     request_db-name: Request-Dashboard
     request_db-description: Das Request-Dashboard gibt Ihnen Informationen über die statistische Verteilung der Anwortzeiten, den Durchsatz sowie die Fehlerrate.
       <br><br>
-      Requests werden nach Anwendungsfällen gruppiert, um beispielsweise die Anwendungsfälle mit der höchsten Response-Zeit identifizieren zu können. Die Gruppierung erfolgt beim Einsatz von populären Frameworks wie Spring MVC oder JAX-RS automatisch. Aber auch die Unterstützung von anderen Anwendungen lässt sich einfach durch manuelle Konfiguration umsetzen.
+      Anfragen werden nach Anwendungsfällen gruppiert, um beispielsweise die Anwendungsfälle mit der höchsten Response-Zeit identifizieren zu können. Die Gruppierung erfolgt beim Einsatz von populären Frameworks wie Spring MVC oder JAX-RS automatisch. Aber auch die Unterstützung von anderen Anwendungen lässt sich einfach durch manuelle Konfiguration umsetzen.
       <br><br>
-      Neben Statistiken für HTTP-Anfragen lassen sich unter Anderem JDBC-Queries, AJAX-Requests sowie Page-Load-Zeiten analysieren.
+      Neben Statistiken für HTTP-Anfragen lassen sich unter anderem JDBC-Queries, AJAX-Anfragen sowie Page-Load-Zeiten analysieren.
     request_db-image_title: Request-Dashboard
 
     jvm_db-name: JVM-Dashboard

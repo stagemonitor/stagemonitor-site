@@ -59,7 +59,7 @@ en:
     request_trace-image_title: Request Trace
 
     configuration_mgmt-name: Configuration Management done right
-    configuration_mgmt-description: The stagemonitor widget includes a configuration tab in which you can reload an dynamically update
+    configuration_mgmt-description: The stagemonitor widget includes a configuration tab in which you can reload and dynamically update
       stagemonitor's configuration and view the available configuration sources.<br><br>
       For each configuration option, you can view documentation, find out about the configuration source of the current
       value, see validation errors and save a new value to an arbitrary configuration source.

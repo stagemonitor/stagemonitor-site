@@ -1,14 +1,13 @@
 .dropdown-menu {
-	text-align: center;
 	min-width: inherit;
 	background-color: #222;
 	border-color: #080808;
 }
-.dropdown-menu > li > a{
-	color: #999;
-}
-.dropdown-menu > li > :hover{
+.dropdown-menu > li > a:hover{
 	color: #000;
-	background-color: #999;
+	background-color: #252525;
 }
-
+.icon-small
+{
+	height:12px;
+}

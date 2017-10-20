@@ -2,16 +2,6 @@
   - icon: fa-user-secret
     secret-headline: :secret-headline
     secret-description: :secret-description
-  - icon: fa-server
-    server-headline: :server-headline
-    server-description: :server-description
-  - icon: fa-puzzle-piece
-    puzzle-piece-headline: :puzzle-piece-headline
-    puzzle-piece-description: :puzzle-piece-description
-- items:
-  - icon: fa-bell-o
-    bell-o-headline: :bell-o-headline
-    bell-o-description: :bell-o-description
   - icon: fa-sitemap
     sitemap-headline: :sitemap-headline
     sitemap-description: :sitemap-description
@@ -19,3 +9,13 @@
   - icon: fa-refresh
     refresh-headline: :refresh-headline
     refresh-description: :refresh-description
+- items:
+  - icon: fa-bell-o
+    bell-o-headline: :bell-o-headline
+    bell-o-description: :bell-o-description
+  - icon: fa-server
+    server-headline: :server-headline
+    server-description: :server-description
+  - icon: fa-puzzle-piece
+    puzzle-piece-headline: :puzzle-piece-headline
+    puzzle-piece-description: :puzzle-piece-description
