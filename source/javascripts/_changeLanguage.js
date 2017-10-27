@@ -19,9 +19,16 @@ $(function() {
 });
 
 function getBrowserLanguage(){
+	var language;
     if (navigator.languages != undefined) {
-        return navigator.languages[0];
+        language = navigator.languages[0];
     } else {
-        return navigator.language;
+        language = navigator.language;
     }
+
+    if(language.indexOf("-") > 0){
+		language = language.substring(0,language.indexOf("-"));
+	}
+	
+    return language;
 }

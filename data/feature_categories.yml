@@ -8,22 +8,22 @@
     - id: metrics
       metrics-name: :metrics-name
       metrics-description: :metrics-description
-      image: images/widget-metrics-tab.png
+      image: /images/widget-metrics-tab.png
       metrics-image_title: :metrics-image_title
     - id: call_tree_view
       call_tree_view-name: :call_tree_view-name
       call_tree_view-description: :call_tree_view-description
-      image: images/widget-call-tree.png
+      image: /images/widget-call-tree.png
       call_tree_view-image_title: :call_tree_view-image_title
     - id: request_trace
       request_trace-name: :request_trace-name
       request_trace-description: :request_trace-description
-      image: images/widget-request-trace.png
+      image: /images/widget-request-trace.png
       request_trace-image_title: :request_trace-image_title
     - id: configuration_mgmt
       configuration_mgmt-name: :configuration_mgmt-name
       configuration_mgmt-description: :configuration_mgmt-description
-      image: images/widget-configuration.png
+      image: /images/widget-configuration.png
       configuration_mgmt-image_title: :configuration_mgmt-image_title
 
 - id: analyze-requests
@@ -36,12 +36,12 @@
     - id: powerful_q_f
       powerful_q_f-name: :powerful_q_f-name
       powerful_q_f-description: :powerful_q_f-description
-      image: images/stagemonitor-kibana-filter.png
+      image: /images/stagemonitor-kibana-filter.png
       powerful_q_f-image_title: :powerful_q_f-image_title
     - id: detailed_traces
       detailed_traces-name: :detailed_traces-name
       detailed_traces-description: :detailed_traces-description
-      image: images/stagemonitor-kibana-details.png
+      image: /images/stagemonitor-kibana-details.png
       detailed_traces-image_title: :detailed_traces-image_title
 
 
@@ -57,20 +57,20 @@
     - id: request_db
       request_db-name: :request_db-name
       request_db-description: :request_db-description
-      image: images/dashboard-request.png
+      image: /images/dashboard-request.png
       request_db-image_title: :request_db-image_title
     - id: jvm_db
       jvm_db-name: :jvm_db-name
       jvm_db-description: :jvm_db-description
-      image: images/dashboard-memory.png
+      image: /images/dashboard-memory.png
       jvm_db-image_title: :jvm_db-image_title
     - id: ehCache
       ehCache-name: :ehCache-name
       ehCache-description: :ehCache-description
-      image: images/dashboard-ehcache.png
+      image: /images/dashboard-ehcache.png
       ehCache-image_title: :ehCache-image_title
     - id: server_metrics
       server_metrics-name: :server_metrics-name
       server_metrics-description: :server_metrics-description
-      image: images/dashboard-server.png
+      image: /images/dashboard-server.png
       server_metrics-image_title: :server_metrics-image_title
