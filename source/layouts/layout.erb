@@ -48,10 +48,17 @@
 
 			<div class="collapse navbar-collapse" id="navigationbar">
 				<ul class="nav navbar-nav">
-					<li><a class="smoothscroll" href="#overview">Features</a></li>
-					<li><a href="https://github.com/stagemonitor/stagemonitor/wiki">Documentation</a></li>
+					<li><a class="smoothscroll" href="#overview"><%= I18n.t(:"section-features") %></a></li>
+					<li><a href="https://github.com/stagemonitor/stagemonitor/wiki"><%= I18n.t(:"section-documentation") %></a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right header-social">
+          <li class="dropdown">
+            <a href="#" id="languages" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-globe"></i><span class="caret"></span></a>
+            <ul class="dropdown-menu" styleClass="dropdown-menu-small" role="menu">
+              <li><a id="de" href="/de" class="language"> <img src="images/germany-flag-square-icon-64.png" class="icon-small">&nbsp;&nbsp;Deutsch</a></li>
+              <li><a id="en" href="/" class="language"> <img src="images/united-kingdom-flag-square-icon-64.png" class="icon-small">&nbsp;&nbsp;English</a></li>
+            </ul>
+          </li>
 					<li>
 						<iframe allowtransparency="true" class="github-btn" frameborder="false" height="20" scrolling="0" src="http://ghbtns.com/github-btn.html?user=stagemonitor&repo=stagemonitor&type=watch&count=true&size=small" title="Star on GitHub" width="104"></iframe>
 					</li>
@@ -80,7 +87,7 @@
 						<img src="images/footer-logo2.png" alt="stagemonitor logo" class="img-responsive"/>
 					</a>
 				</div>
-				<p>an open source solution to application performance monitoring for java server applications</p>
+				<p><%= I18n.t(:"stagemonitor-slogan") %></p>
 				<p class="copyright">
 					&copy; <script type="text/javascript">document.write(new Date().getFullYear());</script>
 					<a href="https://www.isys.de">iSYS Software GmbH</a> | Design by
@@ -90,18 +97,18 @@
 
 			<div class="col-lg-2 socialize">
 				<i class="fa fa-users"></i>
-				<h3 class="social">socialize</h3>
+				<h3 class="social"><%= I18n.t(:"footer-socialize") %></h3>
 				<ul>
 					<li><a href="https://github.com/stagemonitor/stagemonitor">GitHub</a></li>
 					<li><a href="https://twitter.com/stagemonitor">Twitter</a></li>
 					<li><a href="https://plus.google.com/+FelixB">GooglePlus</a></li>
 					<li><a href="https://www.xing.com/profile/Felix_Barnsteiner">XING</a></li>
-					<li><a href="https://github.com/stagemonitor/stagemonitor-mailinglist">Mailing List</a></li>
+					<li><a href="https://github.com/stagemonitor/stagemonitor-mailinglist"><%= I18n.t(:"footer-mailing-list") %></a></li>
 				</ul>
 			</div>
 			<div class="col-lg-3 socialize">
 				<i class="fa fa-envelope"></i>
-				<h3 class="contact">Contact Us</h3>
+				<h3 class="contact"><%= I18n.t(:"footer-contact-us") %></h3>
 				<ul>
 					<li><a href="mailto:felix.barnsteiner@isys.de">felix.barnsteiner@isys.de</a></li>
 				</ul>

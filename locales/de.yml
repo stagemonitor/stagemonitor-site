@@ -1,0 +1,121 @@
+de:
+    section-features: Features
+    section-documentation: Dokumentation
+
+    stagemonitor-slogan: make your application perform like a star
+    stagemonitor-description: eine OpenSource-Lösung für die Performance-Überwachung von Java Server Applikationen
+
+    button-github: GitHub
+    button-get-started: Anleitung
+    button-more-info: Mehr
+
+    footer-socialize: Soziale Medien
+    footer-contact-us: Kontakt
+    footer-mailing-list: Mailing Liste
+
+    fa-user-secret-headline: Setzen Sie bei Ihren Daten auf Privatsphäre
+    fa-user-secret-description: Sie können stagemonitor in Ihrem eigenen Datenzentrum hosten. Nichts wird an Dritte weitergegeben.
+
+    fa-server-headline: Verlässlich
+    fa-server-description: Stagemonitor wird erfolgreich in der Produktion sowie Entwicklung eingesetzt und liefert dabei laufend wertvolle Erkenntnisse bei geringem Overhead.
+
+    fa-puzzle-piece-headline: Erweiterbarkeit
+    fa-puzzle-piece-description: Schreiben Sie eigene Erweiterungen, verwenden Sie Erweiterungen von Dritten, definieren Sie eigene Metriken und erstellen Sie Dashboards nach Ihren eigenen Anforderungen.
+
+    fa-bell-o-headline: Alerting
+    fa-bell-o-description: Legen Sie für Ihre Metriken eigene Schwellwerte fest. Verwalten Sie Benachrichtigungen und Alerting-Channels.
+
+    fa-sitemap-headline: Tracing für Verteilte Systeme
+    fa-sitemap-description: Stagemonitor verwendet die <a href="http://opentracing.io/" target="_blank">Open Tracing</a> API um Anfragen über Verteilte Systeme hinweg zu verfolgen.
+
+    fa-refresh-headline: Verbindet Dev & Ops
+    fa-refresh-description: Stagemonitor wurde für den Einsatz in Entwicklung, Qualitätssicherung sowie Produktion entwickelt.
+
+
+    in-browser-widget-name: Browser Widget
+    in-browser-widget-short_description: Optionale Backend-Anbindung - einfach aufzusetzen
+        <br>Das optimale Werkzeug während der Entwicklung.
+    in-browser-widget-description: Das Widget ist ein kleines stagemonitor-Icon, das automatisch zur Entwicklungszeit in die zu überwachende Webseite eingebunden werden kann.
+        Mittels konfigurierbaren Schwellwerten erhalten Sie eine sofortige Rückmeldung sobald eine Anfrage zu langsam war oder zuviele SQL-Anfragen abgesetzt worden sind.
+        Des Weiteren existiert eine übersichtliche Ansicht der Methoden die während einer Anfrage aufgerufen wurden.
+        <br><br>
+        Durch unmittelbares Feedback wird der Entwickler sofort über inperformante Teile der Anwendung informiert und kann der Ursache unmittelbar auf den Grund gehen.
+
+    metrics-name: Live-Metriken
+    metrics-description: Das Metriken-Tab visualisert die von stagemonitor gesammelte Metriken in anschaulichen Tabellen und Graphen in Echtzeit. Hierbei ist keine zusätzliche Installation einer Datenbank oder eines Visualisierungstools erforderlich.
+    metrics-image_title: Widget Metriken-Tab
+
+    call_tree_view-name: Call-Tree-Ansicht
+    call_tree_view-description: Dieser Tab zeigt den Call-Tree der aktuellen Anfrage, inklusive der SQL-Statements an. So können die Bottlenecks Ihrer Anwendung schnellstmöglich identifiziert werden.<br><br>
+      Die während einer Anfrage aufgerufenen Methoden werden dabei vom stagemonitor-Profiler erfasst, ohne Ihre Anwendung zu verlangsamen.
+    call_tree_view-image_title: Call-Tree-Ansicht
+
+    request_trace-name: Request-Ansicht
+    request_trace-description: In diesem Tab finden Sie detaillierte Informationen über die aktuelle Anfrage.<br><br>
+      Hier werden unter anderem die Ausführungszeit sowie die Anzahl der Datenbankinteraktionen dargestellt. <br>
+      Zusätzlich können die HTTP-Header sowie Informationen über das verwendete Endgerät, den Browser sowie das Betriebssystem des Clients eingesehen werden.
+    request_trace-image_title: Request Trace
+
+    configuration_mgmt-name: Konfigurationsmanagement
+    configuration_mgmt-description: Innerhalb des stagemonitor-Widgets können mittels des Konfigurations-Tabs Änderungen der Einstellungen zur Laufzeit vorgenommen werden.
+      Dabei werden alle verfügbaren Konfigurationsquellen angezeigt.
+      <br><br>
+      Zu jeder Konfigurationsoption lässt sich eine eine Beschreibung sowie die Konfigurationsquelle des aktuell eingestellten Wertes einsehen.
+      Zusätzlich erfolgt eine Validierung der vorgenommenen Einstellungen und neue Einstellungen können in einer beliebigen Konfigurationsquelle abgespeichert werden.
+      <br><br>
+      Klicken Sie <a href="https://github.com/stagemonitor/stagemonitor/tree/master/stagemonitor-configuration"><b>hier</b></a> für mehr Informationen über das Konfigurationsmanagement und wie Sie es auch in Ihren Applikationen einsetzen können.
+
+    configuration_mgmt-image_title: Konfigurationsmanagement
+
+    analyze-requests-name: Request-Analyse
+    analyze-requests-short_description: Analysieren Sie Fehler in der Produktionsumgebung/Web-Analytics
+    analyze-requests-description: Stagemonitor beinhaltet ein <a href="http://www.elasticsearch.org/overview/kibana/">Kibana</a>-Dashboard,
+      das genutzt werden kann, um detaillierte Informationen über verarbeitete Anfragen zu erhalten. Dafür müssen weder Logdateien eingelesen, noch Logstash aufgesetzt werden.
+      <br><br>
+      Sie wollen wissen, was die häufigste Quelle von Fehlern ist, welche Arten von Anfragen zu Fehlern führen oder warum eine Anfrage so langsam war?
+      Dieses Dashboard versorgt Sie mit den Antworten die Sie benötigen.
+
+    powerful_q_f-name: Leistungsstarke Abfrage- und Filterfähigkeiten
+    powerful_q_f-description: Filtern Sie Requests mittels Abfragen oder per Auswahl von Diagrammen. Sie können die Abfragefunktion nutzen um Details von Anfragen einzusehen die Fehler verursacht haben oder langsam waren.
+    powerful_q_f-image_title: Filter Requests
+
+    detailed_traces-name: Detaillierte Request-Traces
+    detailed_traces-description: In diesem Abschnitt können Sie den Gründen für fehlerhafte oder langsame Anfragen nachgehen, indem Sie die Stack-Traces von Exceptions, Request-Header und -Parameter analysiseren.
+      Die Details umfassen unter anderem den Login-Namen des Nutzers, seine IP-Adresse und sein Betriebssystem.<br><br>
+      Sie können ebenfalls den Methoden Call-Tree inklusive der SQL-Statements sowie der Parameter einsehen um nachzuvollziehen, was genau eine Anfrage verlangsamt hat.
+      Der stagemonitor-Profiler konstruiert den Methoden Call-Tree ohne großen Overhead.
+    detailed_traces-image_title: Request Details
+
+    grafana-dashboards-name: Cluster Monitoring
+    grafana-dashboards-short_description: Metriken Ihres gesamten Clusters - perfekt für den Produktivbetrieb
+    grafana-dashboards-description: Der Monitoring-Agent lässt sich nahtlos mit Zeitreihen-Datenbanken wie Elasticsearch,
+      Graphite oder InfluxDB integrieren, um eine lange Historie von Datenpunkten abspeichern zu können.
+      Stagemonitor beinhaltet vorkonfigurierte Grafana-Dashboards, die vollständig angepasst werden können. <br><br>
+      Um einen verbesserten Überblick über Systemlandschaften hinweg zu ermöglichen, lassen sich sowohl einzelne wie auch aggregierte Daten des Gesamtsystems visualisieren. Hierzu gibt es Filteroptionen für die Anwendung, die Instanz und den Host.
+      Wird keine Auswahl getroffen, erhalten Sie automatisch aggregierte Metriken des gesamten Systems.
+      <br><br>
+      Stagemonitor enthält die populäre <a href="http://metrics.codahale.com/">Metrics</a>-Bibliothek. Hiermit können Sie
+      <a href="https://github.com/stagemonitor/stagemonitor/wiki/Track-your-own-metrics">selbst definierte Metriken</a> erfassen -
+      entweder programmatisch oder deklarativ über Annotationen.
+
+    request_db-name: Request-Dashboard
+    request_db-description: Das Request-Dashboard gibt Ihnen Informationen über die statistische Verteilung der Anwortzeiten, den Durchsatz sowie die Fehlerrate.
+      <br><br>
+      Anfragen werden nach Anwendungsfällen gruppiert, um beispielsweise die Anwendungsfälle mit der höchsten Response-Zeit identifizieren zu können. Die Gruppierung erfolgt beim Einsatz von populären Frameworks wie Spring MVC oder JAX-RS automatisch. Aber auch die Unterstützung von anderen Anwendungen lässt sich einfach durch manuelle Konfiguration umsetzen.
+      <br><br>
+      Neben Statistiken für HTTP-Anfragen lassen sich unter anderem JDBC-Queries, AJAX-Anfragen sowie Page-Load-Zeiten analysieren.
+    request_db-image_title: Request-Dashboard
+
+    jvm_db-name: JVM-Dashboard
+    jvm_db-description: Beinhaltet Informationen über die Heap-Auslastung, das Verhalten der Garbage Collection und die CPU-Nutzung.
+    image: images/dashboard-memory.png
+    jvm_db-image_title: JVM-Dashboard
+
+    ehCache-name: EhCache-Metriken
+    ehCache-description: Informationen über Hit-Rate, Cache-Größe (in Bytes), Durchsatz und Expiration-Zeiten von allen Caches.
+    ehCache-image_title: EhCache Dashboard
+
+    server_metrics-name: Server-Metriken
+    server_metrics-description: Dieses Dashboard enthält Informationen über die Nutzung des Server Thread Pools, die Anzahl der aktuellen Sessions, die Auslastung Ihrer Hosts und die Anzahl der laufenden Server.
+
+    server_metrics-image_title: Server Dashboard

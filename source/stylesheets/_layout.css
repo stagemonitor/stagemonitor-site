@@ -221,7 +221,7 @@ header .header-social li a:hover {
 	color: #c9c9c9;
 	font-size: 1.1em;
 	padding-right: 5px;
-	text-align: justify;
+	text-align: left;
 }
 
 #overview .col-md-4 {
