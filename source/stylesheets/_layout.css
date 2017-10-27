@@ -159,7 +159,7 @@ header .header-social li a:hover {
 /* ------------------------------------------------------------------ */
 
 #hero {
-	background: #23292f url('../images/intro-bg.jpg') no-repeat top center;
+	background: #23292f url('/images/intro-bg.jpg') no-repeat top center;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	background-size: cover;

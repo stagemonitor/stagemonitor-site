@@ -109,7 +109,7 @@ en:
 
     jvm_db-name: JVM Dashboard
     jvm_db-description: Get information about the heap utilisation, garbage collection behaviour and CPU utilisation.
-    image: images/dashboard-memory.png
+    image: /images/dashboard-memory.png
     jvm_db-image_title: JVM Memory Dashboard
 
     ehCache-name: EhCache Metrics
