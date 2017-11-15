@@ -1,0 +1,44 @@
+- support:
+  header: Do you have any questions
+  header_label: Community Support
+  header_icon: fa-question
+  support_description: The stagemonitor team provides community support, you can choose between different ways to contact us.
+  feature_list:
+    - features:
+      - icon: fa-github-square
+        headline: GitHub
+        description: If you have a bug or an idea.
+        detail_link: https://github.com/stagemonitor/stagemonitor/issues
+      - icon: fa-envelope-o
+        headline: Mailing List
+        description: MailingGroup
+        detail_link: https://github.com/stagemonitor/stagemonitor-mailinglist
+      - icon: fa-weixin
+        headline: Gitter
+        description: Chat with us for fast support!
+        detail_link: https://gitter.im/stagemonitor/stagemonitor
+- support:
+  header_label: Commercial Support
+  support_description: We also provide professional support for the use of stagemonitor, please <a class="contact" href="mailto:felix.barnsteiner@isys.de">Contact us</a> for more information.
+  feature_list:
+    - features:
+      - icon: fa-user
+        headline: Individual development
+#        description: Kurze Beschreibung
+      - icon: fa-info
+        headline: Expert analysis
+#        description: Kurze Beschreibung
+      - icon: fa-mobile
+        headline: Telephone and email support
+#        description: Kurze Beschreibung
+    - features:
+      - icon: fa-graduation-cap
+        headline: Trainings and workshops
+#        description: Kurze Beschreibung
+      - icon: fa-cog
+        headline: Customizing
+#        description: Kurze Beschreibung
+      - icon: fa-code
+        headline: Help with the installation
+#        description: Kurze Beschreibung
+

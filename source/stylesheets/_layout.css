@@ -33,7 +33,7 @@ ul {
 }
 
 iframe {
-    border: none;
+	border: none;
 }
 
 .section-head {
@@ -45,7 +45,7 @@ iframe {
 	font: 20px/36px 'Raleway', sans-serif;
 	color: #333;
 	text-transform: uppercase;
-	letter-spacing: 1.5px;
+	letter-pacing: 1.5px;
 	margin-bottom: 12px;
 }
 
@@ -57,7 +57,6 @@ iframe {
 h2, h3 {
 	margin-top: 0px;
 }
-
 
 h2 {
 	font: 28px/36px 'Raleway', sans-serif;
@@ -147,8 +146,10 @@ header .header-social li a:hover {
 	color: #b4b4b4;
 	margin-top: 35px;
 }
-.scrolldown a:hover { color: #fff; }
 
+.scrolldown a:hover {
+	color: #fff;
+}
 
 .nav > li > a:hover, .nav > li > a:focus {
 	background-color: transparent;
@@ -190,9 +191,8 @@ header .header-social li a:hover {
 	line-height: 4em;
 }
 
-
 #hero-content .img-responsive {
-	width:100%;
+	width: 100%;
 	max-width: 598px;
 }
 
@@ -221,7 +221,7 @@ header .header-social li a:hover {
 	color: #c9c9c9;
 	font-size: 1.1em;
 	padding-right: 5px;
-	text-align: left;
+	/*text-align: left;*/
 }
 
 #overview .col-md-4 {
@@ -285,6 +285,7 @@ header .header-social li a:hover {
 .feature-overview a {
 	color: #A9B5C0;
 }
+
 .feature-overview a:hover {
 	color: #fff;
 }
@@ -299,8 +300,8 @@ header .header-social li a:hover {
 }
 
 .feature-short-desc {
-        color: rgba(235, 238, 238, 0.75) !important;
-        font-style: italic;
+	color: rgba(235, 238, 238, 0.75) !important;
+	font-style: italic;
 }
 
 .item .item-wrap {
@@ -398,7 +399,6 @@ header .header-social li a:hover {
 	transform: scale(1.2);
 }
 
-
 /* ------------------------------------------------------------------ */
 /* j. Footer
 /* ------------------------------------------------------------------ */
@@ -421,8 +421,9 @@ footer a:hover, footer a:focus {
 	color: #fff;
 }
 
-
-footer .right-cols .columns p { margin-bottom: 6px; }
+footer .right-cols .columns p {
+	margin-bottom: 6px;
+}
 
 footer h3 {
 	font: 13px/24px 'Raleway', sans-serif;
@@ -471,7 +472,6 @@ footer .socialize .fa {
 #go-top a:hover {
 	background: #0F9095;
 }
-
 
 /* Featurettes
 ------------------------- */
@@ -535,3 +535,37 @@ ul.social-buttons li a {
 	transition: all .3s;
 }
 
+/*Support*/
+#support {
+	padding-top: 4em;
+	padding-bottom: 2em;
+}
+#support h1 {
+	color: white;
+}
+#support h2 {
+	font-family: 'Raleway', sans-serif;
+	font-style: italic;
+	color: #fff;
+}
+#support h3 {
+	color: white;
+	font-size: 20px;
+}
+
+#support p {
+	color: #c9c9c9;
+}
+#support .row {
+	margin-top: 1.5em;
+}
+
+.support-fa {
+	float: right;
+	color: #EBEEEE;
+}
+
+.fix-width-fa {
+	width: 1.28571429em;
+	text-align: center;
+}

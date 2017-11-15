@@ -40,31 +40,31 @@ title: stagemonitor
 	</div>
 </section> <!-- Homepage Hero end -->
 <section id="overview" class="overview">
-	<div class="container">
-		<% data.overview_elements.each do |overview_element| %>
-			<div class="row">
-				<% overview_element.items.each do |item| %>
-					<div class="col-md-4">
-						<div class="col-md-3">
-						<% if item.detail_link? %>
-							<a href="<%= item.detail_link %>" target="_blank"><i class="fa <%= item.icon %> big-fa fa-5x"></i></a>
-						<% else %>
-								<i class="fa <%= item.icon %> big-fa fa-5x"></i>
-						<% end %>
-						</div>
-						<div class="col-md-9">
-						<% if item.detail_link? %>
-							<a href="<%= item.detail_link %>" target="_blank"><h2><%= I18n.t(:"#{item.icon}-headline") %></h2></a>
-						<% else %>
-								<h2><%= I18n.t(:"#{item.icon}-headline") %></h2>
-						<% end %>
-							<p><%= I18n.t(:"#{item.icon}-description") %></p>
-						</div>
-					</div>
-				<% end %>
-			</div>
-		<% end %>
-	</div>
+  <div class="container">
+    <% data.overview_elements.each do |overview_element| %>
+        <div class="row">
+          <% overview_element.items.each do |item| %>
+              <div class="col-md-4">
+                <div class="col-md-3">
+                  <% if item.detail_link? %>
+                      <a href="<%= item.detail_link %>" target="_blank"><i class="fa <%= item.icon %> big-fa fa-5x"></i></a>
+                  <% else %>
+                      <i class="fa <%= item.icon %> big-fa fa-5x"></i>
+                  <% end %>
+                </div>
+                <div class="col-md-9">
+                  <% if item.detail_link? %>
+                      <a href="<%= item.detail_link %>" target="_blank"><h2><%= I18n.t(:"#{item.icon}-headline") %></h2></a>
+                  <% else %>
+                      <h2><%= I18n.t(:"#{item.icon}-headline") %></h2>
+                  <% end %>
+                  <p><%= I18n.t(:"#{item.icon}-description") %></p>
+                </div>
+              </div>
+          <% end %>
+        </div>
+    <% end %>
+  </div>
 </section>
 
 <section id="features">
@@ -88,7 +88,7 @@ title: stagemonitor
 							<a class="btn btn-lg btn-primary live-demo" target="_blank" href="<%= category.live_demo_url %>">Live
 								Demo</a>
 						<% end %>
-                        
+
 						<% unless category.info_url.nil? %>
 							<a class="btn btn-lg btn-primary live-demo" target="_blank" href="<%= category.info_url %>"><%= I18n.t(:"button-more-info") %></a>
 						<% end %>
@@ -99,91 +99,132 @@ title: stagemonitor
 		<section class="features content">
 			<div class="container">
 
-				<% category.features.each_with_index do |feature, index| %>
-					<div class="row featurette">
-						<div class="col-md-6 <% if index.even? %> pull-right<% end %>">
-							<h3 class="featurette-heading"><%= I18n.t(:"#{feature.id}-name") %></h3>
+          <% category.features.each_with_index do |feature, index| %>
+              <div class="row featurette">
+                <div class="col-md-6
+                  <% if index.even? %> pull-right
+                  <% end %>">
+                  <h3 class="featurette-heading"><%= I18n.t(:"#{feature.id}-name") %></h3>
 
-							<p><%= I18n.t(:"#{feature.id}-description") %></p>
-						</div>
+                  <p><%= I18n.t(:"#{feature.id}-description") %></p>
+                </div>
 
-						<div class="col-md-6">
-							<div class="columns item">
-								<div class="item-wrap">
-									<a href="<%= feature.image %>" class="img-responsive" data-imagelightbox="a">
-										<img src="<%= feature.image %>" alt="<%= I18n.t(:"#{feature.id}-image_title") %>">
+                <div class="col-md-6">
+                  <div class="columns item">
+                    <div class="item-wrap">
+                      <a href="<%= feature.image %>" class="img-responsive" data-imagelightbox="a">
+                        <img src="<%= feature.image %>" alt="<%= I18n.t(:"#{feature.id}-image_title") %>">
 
-										<div class="overlay"></div>
-										<div class="link-icon"><i class="fa fa-plus"></i></div>
-									</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<% unless index == category.features.size - 1 %>
-						<hr class="featurette-divider">
-					<% end %>
-				<% end %>
+                        <div class="overlay"></div>
+                        <div class="link-icon"><i class="fa fa-plus"></i></div>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <% unless index == category.features.size - 1 %>
+                  <hr class="featurette-divider">
+              <% end %>
+          <% end %>
 
-			</div>
-		</section>
-	<% end %>
+        </div>
+      </section>
+  <% end %>
+</section>
+<section id="support">
+  <div class="container">
+    <% data.support_elements.each do |support_element| %>
+        <div class="row">
+          <div class="col-md-12 col-xs-12">
+            <h1><%= support_element.header %> <i class="fa <%= support_element.header_icon %>"></i></h1>
+            <h2><%= support_element.header_label %></h2>
+            <p><%= support_element.support_description %></p>
+          </div>
+        </div>
+        <% support_element.feature_list.each do |feature_list| %>
+            <% if feature_list.features.length %>
+            <div class="row ">
+              <% feature_list.features.each do |item| %>
+                  <div class="col-md-4 clearfix">
+                    <div class="col-md-3">
+                      <% if item.detail_link? %>
+                          <a href="<%= item.detail_link %>" target="_blank"><i class="fa <%= item.icon %> support-fa text-center fa-5x fix-width-fa"></i></a>
+                      <% else %>
+                          <i class="fa <%= item.icon %> support-fa text-center fa-5x fix-width-fa"></i>
+                      <% end %>
+                    </div>
+                    <div class="col-md-9">
+                      <% if item.detail_link? %>
+                          <a href="<%= item.detail_link %>" target="_blank"><h2><%= item.headline %></h2></a>
+                      <% else %>
+                          <h2 class="distance-top"><%= item.headline %></h2>
+                      <% end %>
+                      <p><%= item.description %></p>
+                    </div>
+                  </div>
+              <% end %>
+            </div>
+            <% end %>
+        <% end %>
+    <% end %>
+  </div>
 </section>
 
+
 <section id="team" style="display: none">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h2 class="section-heading">Developed By</h2>
-			</div>
-		</div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h2 class="section-heading">Developed By</h2>
+      </div>
+    </div>
 
-		<div class="row center">
-			<div class="col-sm-3">
-			</div>
-			<div class="col-sm-3">
-				<div class="team-member">
-					<img src="/images/felix.jpg" class="img-responsive img-circle" alt="">
-					<h4>Felix Barnsteiner</h4>
+    <div class="row center">
+      <div class="col-sm-3">
+      </div>
+      <div class="col-sm-3">
+        <div class="team-member">
+          <img src="/images/felix.jpg" class="img-responsive img-circle" alt="">
+          <h4>Felix Barnsteiner</h4>
 
-					<p class="text-muted">Project Lead</p>
-					<ul class="list-inline social-buttons">
-						<li><a href="https://github.com/felixbarny"><i class="fa fa-github"></i></a>
-						</li>
-						<li><a href="https://twitter.com/felix_b"><i class="fa fa-twitter"></i></a>
-						</li>
-						<li><a href="https://plus.google.com/+FelixB"><i class="fa fa-google-plus"></i></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-sm-3">
-				<div class="team-member">
-					<img src="/images/Trampusch.jpg" class="img-responsive img-circle" alt="">
-					<h4>Fabian Trampusch</h4>
+          <p class="text-muted">Project Lead</p>
+          <ul class="list-inline social-buttons">
+            <li><a href="https://github.com/felixbarny"><i class="fa fa-github"></i></a>
+            </li>
+            <li><a href="https://twitter.com/felix_b"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="https://plus.google.com/+FelixB"><i class="fa fa-google-plus"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-3">
+        <div class="team-member">
+          <img src="/images/Trampusch.jpg" class="img-responsive img-circle" alt="">
+          <h4>Fabian Trampusch</h4>
 
-					<p class="text-muted">Developer</p>
-					<ul class="list-inline social-buttons">
-						<li><a href="https://github.com/trampi"><i class="fa fa-github"></i></a>
-						</li>
-						<li><a href="https://twitter.com/trampi4"><i class="fa fa-twitter"></i></a>
-						</li>
-						<li><a href="http://trampusch.info/"><i class="fa fa-globe"></i></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="col-sm-3">
-			</div>
-		</div>
+          <p class="text-muted">Developer</p>
+          <ul class="list-inline social-buttons">
+            <li><a href="https://github.com/trampi"><i class="fa fa-github"></i></a>
+            </li>
+            <li><a href="https://twitter.com/trampi4"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li><a href="http://trampusch.info/"><i class="fa fa-globe"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-3">
+      </div>
+    </div>
 
 
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h3 class="section-subheading text-muted">
-					<a href="https://github.com/stagemonitor/stagemonitor/network/members">Join the team.</a></h3>
-			</div>
-		</div>
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h3 class="section-subheading text-muted">
+          <a href="https://github.com/stagemonitor/stagemonitor/network/members">Join the team.</a></h3>
+      </div>
+    </div>
 
-	</div>
+  </div>
 </section>

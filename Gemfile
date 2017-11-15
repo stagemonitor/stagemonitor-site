@@ -15,3 +15,5 @@ gem "tzinfo-data", platforms: [:mswin, :mingw]
 
 gem "middleman-minify-html"
 gem 'therubyracer'
+
+gem "therubyracer"
