@@ -131,17 +131,21 @@ title: stagemonitor
       </section>
   <% end %>
 </section>
+
 <section id="support">
   <div class="container">
     <% data.support_elements.each do |support_element| %>
         <div class="row">
           <div class="col-md-12 col-xs-12">
-            <h1><%= support_element.header %> <i class="fa <%= support_element.header_icon %>"></i></h1>
-            <h2><%= support_element.header_label %></h2>
-            <p><%= support_element.support_description %></p>
+						<% unless support_element.headline.nil? %>
+            	<h1><%= I18n.t(support_element.headline) %> <i class="fa <%= support_element.header_icon %>"></i></h1>
+						<% end %>
+            <h2><%= I18n.t(support_element.header_label) %></h2>
+            <p><%= I18n.t(support_element.support_description) %></p>
           </div>
         </div>
-        <% support_element.feature_list.each do |feature_list| %>
+
+				<% support_element.feature_list.each do |feature_list| %>
             <% if feature_list.features.length %>
             <div class="row ">
               <% feature_list.features.each do |item| %>
@@ -155,11 +159,13 @@ title: stagemonitor
                     </div>
                     <div class="col-md-9">
                       <% if item.detail_link? %>
-                          <a href="<%= item.detail_link %>" target="_blank"><h2><%= item.headline %></h2></a>
+                          <a href="<%= item.detail_link %>" target="_blank"><h2><%= I18n.t(item.headline) %></h2></a>
                       <% else %>
-                          <h2 class="distance-top"><%= item.headline %></h2>
+                          <h2 class="distance-top"><%= I18n.t(item.headline) %></h2>
                       <% end %>
-                      <p><%= item.description %></p>
+                      <% unless support_element.headline.nil? %>
+                        <p><%= I18n.t(item.description) %></p>
+                      <% end %>
                     </div>
                   </div>
               <% end %>

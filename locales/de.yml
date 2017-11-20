@@ -119,3 +119,32 @@ de:
     server_metrics-description: Dieses Dashboard enthält Informationen über die Nutzung des Server Thread Pools, die Anzahl der aktuellen Sessions, die Auslastung Ihrer Hosts und die Anzahl der laufenden Server.
 
     server_metrics-image_title: Server Dashboard
+
+    comunity-support-headline: Benötigen Sie Hilfe
+    comunity-support-label: Community Support
+    comunity-support-description: Das stagemonitor Team bietet kostenlosen Support über verschieden Wege an
+
+    github-headline: GitHub
+    github-description: Für Ideen oder Bugs.
+
+    mailing-list-headline: Mailinglist
+    mailing-list-description: MailingGroup
+
+    gitter-headline: Gitter
+    gitter-description: Chat mit uns für schnellen Support!
+
+    commercial-support-label: Professioneller Support
+    commercial-support-description: Zusätzlich bieten wir professionellen Support für stagemonitor an, bitte  <a class="contact" href="mailto:felix.barnsteiner@isys.de">Kontaktiere uns</a> für weiter Informationen.
+
+    individual-headline: Individual Software
+
+    expert-headline: Expertenanalyse
+
+    phone-headline: Telefon- und Emailsupport
+
+    training-headline: Schulungen und Workshops
+
+    customize-headline: Customizing
+
+    installation-headline: Hilfe bei der Installation
+
