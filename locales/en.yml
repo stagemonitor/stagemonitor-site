@@ -122,3 +122,30 @@ en:
       concurrent sessions, the load of your hosts and the number of running servers.
     server_metrics-image_title: Server Dashboard
 
+    comunity-support-headline: Do you have any Questions
+    comunity-support-label: Community Support
+    comunity-support-description: The stagemonitor team provides community support, you can choose between different ways to contact us.
+
+    github-headline: GitHub
+    github-description: If you have a bug or an idea.
+
+    mailing-list-headline: Mailinglist
+    mailing-list-description: MailingGroup
+
+    gitter-headline: Gitter
+    gitter-description: Chat with us for fast support!
+
+    commercial-support-label: Commercial Support
+    commercial-support-description: We also provide professional support for the use of stagemonitor, please <a class="contact" href="mailto:felix.barnsteiner@isys.de">Contact us</a> for more information.
+
+    individual-headline: Individual development
+
+    expert-headline: Expert analysis
+
+    phone-headline: Telephone and email support
+
+    training-headline: Trainings and workshops
+
+    customize-headline: Customizing
+
+    installation-headline: Help with the installation
